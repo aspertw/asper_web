@@ -10,6 +10,7 @@ import {
   Shield, Zap, Globe, Database, MessageSquare, Bot,
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import DemoNotice from '../components/DemoNotice';
 
 const NexusOS = () => {
   const { t } = useTranslation();
@@ -18,14 +19,14 @@ const NexusOS = () => {
   const agentActivityData = useMemo(() => Array.from({ length: 12 }, (_, i) => ({
     month: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][i],
-    aiRequests: Math.floor(150 + i * 80 + Math.random() * 40),
-    manualOps: Math.max(20, Math.floor(200 - i * 15 + Math.random() * 10)),
+    aiRequests: 150 + i * 80 + (i % 3) * 12,
+    manualOps: Math.max(20, 200 - i * 15 + (i % 2) * 6),
   })), []);
 
   const carbonData = useMemo(() => Array.from({ length: 12 }, (_, i) => ({
     month: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
             'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][i],
-    reduction: Math.floor(20 + i * 7 + Math.random() * 5),
+    reduction: 20 + i * 7 + (i % 3),
     target: 20 + i * 8,
   })), []);
 
@@ -88,6 +89,7 @@ const NexusOS = () => {
             {t('nexus.title')}
           </h1>
           <p className="section-subtitle">{t('nexus.subtitle')}</p>
+          <DemoNotice />
 
           {/* ── 2. Metric Cards ── */}
           <div className="grid-4" style={{ marginBottom: 80 }}>
@@ -122,7 +124,7 @@ const NexusOS = () => {
                   width: 7, height: 7, borderRadius: '50%', background: '#34A853',
                   display: 'inline-block', animation: 'pulse 2s infinite',
                 }} />
-                {t('nexus.liveWindow')}
+                {t('factory:demo.window')}
               </span>
             </div>
 
@@ -215,7 +217,7 @@ const NexusOS = () => {
                   width: 7, height: 7, borderRadius: '50%', background: '#34A853',
                   display: 'inline-block', animation: 'pulse 2s infinite',
                 }} />
-                {t('nexus.liveOps', { count: opsLogRows.length })}
+                {t('factory:demo.operations', { count: opsLogRows.length })}
               </span>
             </div>
 

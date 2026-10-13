@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Shield, Fingerprint, Network, Lock } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import DemoNotice from '../components/DemoNotice';
 
 const SupplyChain = () => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ const SupplyChain = () => {
             {t('supply.title')}
           </h1>
           <p className="section-subtitle">{t('supply.subtitle')}</p>
+          <DemoNotice />
 
           {/* Digital Passport */}
           <div className="grid-2" style={{ marginBottom: 80 }}>

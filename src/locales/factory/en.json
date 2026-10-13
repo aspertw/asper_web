@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "erp": "Open ERP",
+    "esg": "ESG",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu"
+  },
+  "home": {
+    "tag": "Factory operations × customer data requests",
+    "title": "Manage factory operations.",
+    "titleAccent": "Prepare the records your customers need.",
+    "description": "Choose ERP for operations; ESG for carbon and recovery records.",
+    "erpCta": "Assess ERP fit",
+    "esgCta": "Choose an ESG outcome",
+    "note": "Already have an ERP? Start with ESG.",
+    "mapTitle": "Choose a path for your current problem",
+    "mapErp": "Hard to manage shifts, attendance or purchasing?",
+    "mapErpDetail": "Review workflows, data and maintenance needs first.",
+    "mapExisting": "Does a customer need carbon or recovery evidence?",
+    "mapExistingDetail": "Choose one data outcome and confirm the scope.",
+    "routesDescription": "Need both? Start with the customer deadline.",
+    "flowTag": "From source to delivery",
+    "flowTitle": "Keep a source behind every record.",
+    "flowDescription": "Asper builds workflows around sources, periods and review records. AI-assisted preparation is planned for a later stage; people review and finalize the data.",
+    "flowSteps": [
+      {
+        "title": "Collect",
+        "body": "Existing systems, documents and flow records."
+      },
+      {
+        "title": "Check gaps",
+        "body": "Review fields, periods and units."
+      },
+      {
+        "title": "Keep evidence",
+        "body": "Link sources for human review."
+      },
+      {
+        "title": "Deliver",
+        "body": "Prepare the requested output."
+      }
+    ],
+    "materialsTag": "Recovery traceability",
+    "materialsTitle": "Need recovery evidence? Connect the handover records first.",
+    "materialsBody": "Prepare recovery evidence from batch, weight, handover and treatment records. AsperScan material identification can provide one of these data sources.",
+    "visionLink": "View the material identification demo",
+    "traceLink": "Review recovery traceability services",
+    "nextTitle": "Unsure where to start?",
+    "nextBody": "Describe your needs and current tools. Mark unknown fields “to be confirmed”.",
+    "nextCta": "Open an enquiry draft",
+    "emailSubject": "Asper factory adoption inquiry",
+    "erpStatus": "Open-source release in preparation",
+    "esgStatus": "Paid project assessment",
+    "contactSteps": [
+      {
+        "title": "Confirm the need",
+        "body": "Asper confirms the problem and deadline."
+      },
+      {
+        "title": "Review the data",
+        "body": "Both parties review data and requirements."
+      },
+      {
+        "title": "Agree on scope",
+        "body": "Confirm the work, quote and acceptance criteria."
+      }
+    ],
+    "contactNote": "You review and send the draft. An Asper team member follows up.",
+    "emailBody": "Company, contact person and contact details:\nNeed: ERP / ESG / to be confirmed\nOperational problem or customer request:\nTarget deadline (or to be confirmed):\nCurrent ERP, Excel files or records:\nSite, period or product (or to be confirmed):\n",
+    "moreTitle": "Explore data sources and recovery services"
+  },
+  "demo": {
+    "label": "Sample data",
+    "notice": "This page illustrates interface and workflow concepts. Figures, charts and operation logs use sample data; availability is confirmed for each project.",
+    "window": "Sample charts",
+    "operations": "Sample operations · {{count}} records",
+    "streams": "Sample data · {{count}} records",
+    "badge": "DEMO"
+  },
+  "meta": {
+    "homeTitle": "Factory Operations and ESG Data | Asper",
+    "homeDescription": "Choose Nexus ERP assessment or an ESG data project based on your factory’s current problem. The open-source release is in preparation; existing ERP or spreadsheet data can be assessed for ESG directly.",
+    "erpTitle": "Nexus Open-source ERP | Asper",
+    "erpDescription": "Assess Nexus ERP workflow scope, working-hour limits and adoption responsibilities. The public release is in preparation; review data and maintenance needs now.",
+    "esgTitle": "Factory ESG Data Services | Asper",
+    "esgDescription": "Choose waste flow evidence, factory carbon inventory data preparation, or product carbon footprint data preparation. Review paid deliverables, first-contact information, and how to start with your existing ERP."
+  }
+}

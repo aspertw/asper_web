@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Brain, Cloud, Layers, Zap, Database, ArrowRight, Microscope, Radio, Server, Workflow } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import DemoNotice from '../components/DemoNotice';
 
 const AIVision = () => {
   const { t } = useTranslation();
@@ -52,6 +53,7 @@ const AIVision = () => {
             {t('aiVision.title')}
           </h1>
           <p className="section-subtitle">{t('aiVision.subtitle')}</p>
+          <DemoNotice />
 
           {/* 1. Metric Cards — 4 columns */}
           <div className="grid-4" style={{ marginBottom: 80 }}>
@@ -85,7 +87,7 @@ const AIVision = () => {
                   width: 7, height: 7, borderRadius: '50%', background: '#34A853',
                   display: 'inline-block', animation: 'pulse 2s infinite',
                 }} />
-                {t('aiVision.liveStreams', { count: gridRows.length })}
+                {t('factory:demo.streams', { count: gridRows.length })}
               </span>
             </div>
 

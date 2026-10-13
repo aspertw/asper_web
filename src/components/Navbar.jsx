@@ -18,6 +18,8 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: t('nav.home') },
+    { path: '/nexus/erp', label: t('factory:nav.erp') },
+    { path: '/esg', label: t('factory:nav.esg') },
     { path: '/ai-vision', label: t('nav.aiVision') },
     { path: '/nexus', label: t('nav.nexus') },
     { path: '/supply-chain', label: t('nav.supply') },
@@ -45,7 +47,7 @@ const Navbar = () => {
         </Link>
 
         <div style={{
-          display: 'flex', alignItems: 'center', gap: 32,
+          display: 'flex', alignItems: 'center', gap: 18,
         }} className="nav-desktop">
           {navLinks.map(link => (
             <Link key={link.path} to={link.path} style={{
@@ -88,7 +90,9 @@ const Navbar = () => {
             )}
           </div>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} style={{
+          <button aria-label={t(mobileOpen ? 'factory:nav.menuClose' : 'factory:nav.menuOpen')}
+            aria-expanded={mobileOpen} aria-controls="mobile-navigation"
+            onClick={() => setMobileOpen(!mobileOpen)} style={{
             display: 'none', background: 'none', border: 'none', color: '#fff', cursor: 'pointer',
           }} className="nav-mobile-btn">
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -97,7 +101,7 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div style={{
+        <div id="mobile-navigation" style={{
           padding: '16px 24px', background: 'rgba(0,0,0,0.95)',
           borderTop: '1px solid rgba(255,255,255,0.05)',
         }} className="nav-mobile-menu">
@@ -113,11 +117,11 @@ const Navbar = () => {
       )}
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 1023px) {
           .nav-desktop { display: none !important; }
           .nav-mobile-btn { display: block !important; }
         }
-        @media (min-width: 769px) {
+        @media (min-width: 1024px) {
           .nav-mobile-menu { display: none !important; }
         }
       `}</style>

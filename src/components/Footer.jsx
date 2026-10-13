@@ -47,6 +47,8 @@ const Footer = () => {
               textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 20,
             }}>{t('footer.quickLinks')}</h4>
             {[
+              { path: '/nexus/erp', label: t('factory:nav.erp') },
+              { path: '/esg', label: t('factory:nav.esg') },
               { path: '/ai-vision', label: t('nav.aiVision') },
               { path: '/nexus', label: t('nav.nexus') },
               { path: '/supply-chain', label: t('nav.supply') },
