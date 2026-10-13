@@ -1,18 +1,27 @@
-.factory-hero { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 72px; padding-bottom: 100px; }
-.factory-hero h1 { font-family: var(--font-body); font-size: clamp(2.25rem, 3.8vw, 3.8rem); font-weight: 650; line-height: 1.35; letter-spacing: -0.04em; margin: 24px 0; }
-.factory-accent { color: #75d9a0; }
+.factory-hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 56px; padding-bottom: 100px; }
+.factory-hero > div { min-width: 0; }
+.factory-hero-intro { padding: 24px; border-radius: 16px; background: rgba(3,9,14,.84); }
+.factory-hero h1 { font-family: var(--font-body); font-size: clamp(2.25rem, 3.4vw, 3.4rem); font-weight: 650; line-height: 1.35; letter-spacing: -0.04em; margin: 24px 0; }
+.factory-accent { display: block; color: #75d9a0; line-height: inherit; letter-spacing: inherit; text-wrap: balance; }
 .factory-lead { color: #cbd5e1; font-size: 1.05rem; max-width: 640px; }
-.factory-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
-.factory-note { margin-top: 18px; color: #b1becf; font-size: .78rem; }
-.factory-map { padding: 28px; border: 1px solid rgba(148,163,184,.28); border-radius: 20px; background: rgba(6,13,20,.87); box-shadow: 0 20px 80px rgba(0,0,0,.3); }
-.factory-map-heading { color: #cbd5e1; font-size: .85rem; margin-bottom: 22px; }
-.factory-map-input { display: flex; gap: 15px; align-items: center; padding: 18px; border: 1px solid #283747; border-radius: 10px; margin-bottom: 12px; background: #0c1824; }
-.factory-map-input svg { color: #80b2ff; flex-shrink: 0; }
-.factory-map-input h3 { font-family: var(--font-body); font-size: .93rem; margin-bottom: 6px; }
-.factory-map-input p { font-size: .72rem; color: #a6b6c9; }
-.factory-map-arrow { display: block; margin: 17px auto; color: #7896ad; }
-.factory-map-output { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 16px; background: rgba(52,168,83,.12); border: 1px solid #284d39; border-radius: 10px; color: #abdfbe; font-size: .88rem; }
-.factory-map-review { text-align: center; color: #a6b6c9; font-size: .72rem; padding: 12px 0; }
+.factory-existing { display: flex; gap: 14px; align-items: flex-start; margin-top: 28px; padding: 18px; border-left: 3px solid #75d9a0; background: rgba(12,30,22,.8); border-radius: 0 10px 10px 0; }
+.factory-existing svg { flex-shrink: 0; color: #9adeb2; margin-top: 3px; }
+.factory-existing strong { display: block; color: #c4f1d5; font-size: 1rem; margin-bottom: 8px; }
+.factory-existing p { color: #b1c7bb; font-size: .88rem; }
+.factory-choices { display: grid; gap: 14px; }
+.factory-choices h2 { font-family: var(--font-body); color: #d7e2ed; font-size: 1.05rem; line-height: 1.5; }
+.factory-choice { display: block; padding: 23px; border: 1px solid #3c587d; border-radius: 16px; background: rgba(12,24,39,.94); text-decoration: none; transition: border-color .2s, background .2s; }
+.factory-choice > svg { color: #a3c7ff; margin-bottom: 10px; }
+.factory-choice h3 { font-family: var(--font-body); color: #f1f5f9; font-size: 1.18rem; line-height: 1.45; margin-bottom: 9px; }
+.factory-choice p { color: #becbdc; font-size: .86rem; }
+.factory-choice-status { display: block; color: #d2ddec; font-size: .78rem; line-height: 1.6; margin-top: 14px; }
+.factory-choice-action { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #bdd7ff; font-weight: 600; font-size: .9rem; margin-top: 13px; }
+.factory-choice-action svg { flex-shrink: 0; }
+.factory-choice:hover { opacity: 1; border-color: #9fc5ff; background: rgba(20,39,63,.96); }
+.factory-choice:focus-visible { outline: 3px solid #c0d8ff; outline-offset: 4px; }
+.factory-choice--green { border-color: #3d6850; background: rgba(13,31,24,.94); }
+.factory-choice--green > svg, .factory-choice--green .factory-choice-action { color: #b0e6c3; }
+.factory-choice--green:hover { border-color: #9adeb2; background: rgba(20,47,34,.96); }
 .factory-route-section { padding-top: 90px; }
 .factory-heading { max-width: 780px; margin-bottom: 38px; }
 .factory-heading h2, .factory-materials h2, .factory-contact h2 { font-family: var(--font-body); font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.35; margin: 18px 0; }
@@ -33,7 +42,13 @@
 .factory-materials { padding: 42px; border: 1px solid #253449; border-radius: 18px; background: #0b121d; }
 .factory-materials .factory-text-link { margin-top: 24px; margin-right: 30px; }
 .factory-contact { text-align: center; padding: 50px 30px; border-radius: 18px; background: linear-gradient(125deg, rgba(66,133,244,.12), rgba(52,168,83,.1)); border: 1px solid #25463f; }
-.factory-contact p { margin: 0 auto 26px; }
+.factory-contact-intro { margin: 0 auto 26px; }
+.factory-contact-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; list-style: none; padding: 0; margin: 32px 0; text-align: left; }
+.factory-contact-steps li { padding: 22px; background: rgba(6,15,22,.7); border: 1px solid #2b414b; border-radius: 12px; min-width: 0; }
+.factory-contact-number { display: block; color: #a4d9b7; font-family: var(--font-mono); font-size: .8rem; margin-bottom: 14px; }
+.factory-contact-steps h3 { font-family: var(--font-body); font-size: 1.05rem; line-height: 1.5; margin-bottom: 10px; }
+.factory-contact-steps p { font-size: .88rem; }
+.factory-contact .factory-contact-note { margin: 18px auto 0; color: #bac9d3; font-size: .8rem; }
 .demo-notice { display: flex; align-items: flex-start; gap: 16px; margin: 22px 0 38px; padding: 18px 20px; background: #161b24; border: 1px solid #4c5869; border-radius: 10px; color: #cbd5e1; font-size: .88rem; }
 .demo-notice strong { flex-shrink: 0; color: #e5edf7; font-family: var(--font-mono); font-size: .8rem; }
 @media (max-width: 1100px) { .factory-hero { gap: 36px; } }
@@ -44,10 +59,9 @@
 }
 @media (max-width: 768px) {
   .factory-hero { padding-bottom: 20px; }
-  .factory-map { padding: 20px; }
+  .factory-choice { padding: 20px; }
   .factory-route-card { padding: 26px; }
-  .factory-actions { width: 100%; }
-  .factory-actions .btn-primary, .factory-actions .btn-outline { width: 100%; white-space: normal; }
+  .factory-contact-steps { grid-template-columns: 1fr; gap: 14px; }
   .factory-materials { padding: 28px 22px; }
   .factory-contact { padding: 32px 22px; }
   .demo-notice { flex-direction: column; gap: 7px; }
