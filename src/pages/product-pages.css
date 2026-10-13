@@ -560,6 +560,24 @@
   color: var(--product-accent);
 }
 
+.erp-demo-link { color: var(--product-accent); text-decoration: underline; text-underline-offset: 3px; }
+.erp-fit-grid { margin-top: 24px; }
+.erp-readiness h3, .erp-start-flow + .product-contact-panel h3 { font-family: var(--font-body); font-size: 1.15rem; line-height: 1.5; margin-bottom: 12px; }
+.erp-readiness .product-bullet-list { margin-top: 20px; }
+.erp-comparison-scroll { overflow-x: auto; border: 1px solid #2c394a; border-radius: 12px; margin-bottom: 24px; }
+.erp-comparison-scroll:focus-visible { outline: 2px solid var(--product-accent); outline-offset: 4px; }
+.erp-comparison { width: 100%; min-width: 680px; table-layout: fixed; border-collapse: collapse; text-align: left; }
+.erp-comparison caption { padding: 18px 22px; color: #dce8f8; font-size: .9rem; font-weight: 600; text-align: left; background: #101b2b; }
+.erp-comparison th, .erp-comparison td { padding: 20px 22px; border-top: 1px solid #283445; vertical-align: top; line-height: 1.85; font-size: .88rem; overflow-wrap: anywhere; }
+.erp-comparison thead th { color: #c4d9f5; background: #111a27; }
+.erp-comparison th:first-child { width: 19%; }
+.erp-comparison tbody th { color: #edf3fa; background: #0f1620; font-weight: 500; }
+.erp-comparison td { color: #bac8db; background: #0c121a; }
+.erp-comparison-hint { display: none; }
+.erp-services-grid { margin-top: 24px; }
+.erp-start-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 36px; }
+.erp-start-flow + .product-contact-panel p { color: var(--product-copy); font-size: .9rem; line-height: 1.85; }
+
 @media (max-width: 1024px) {
   .product-hero-grid, .product-split { gap: 36px; }
   .product-hero { padding: 80px 0 64px; }
@@ -589,6 +607,9 @@
   .product-delivery-heading { gap: 18px; }
   .product-delivery-index { font-size: 1.8rem; margin-top: 36px; }
   .product-section--closing { padding-top: 0; }
+  .erp-start-flow { grid-template-columns: minmax(0, 1fr); }
+  .erp-comparison-hint { display: block; }
+  .erp-comparison th, .erp-comparison td { padding: 16px; }
 }
 
 @media (max-width: 480px) {

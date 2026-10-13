@@ -6,40 +6,64 @@
   },
   "erp": {
     "eyebrow": "NEXUS · OPEN-SOURCE ERP",
-    "title": "Build your ERP around the work your factory does every day.",
-    "description": "Nexus Open-source ERP is planned to connect HR, attendance, shifts, purchasing and inventory. Manufacturers with an IT team can plan to self-host or discuss migration and implementation support with Asper.",
-    "demoCta": "View the Nexus demo",
-    "contactCta": "Discuss early adoption",
-    "demoNote": "The Nexus page presents system concepts and sample data. The open-source product has not been released.",
+    "title": "Connect rosters, punches, leave and overtime records to month-end review.",
+    "description": "Nexus plans to cover HR and attendance, as well as requisitions, procurement and inventory. We first review working-hour arrangements, data formats and IT responsibilities. Factories can self-host once the public version is released.",
+    "demoCta": "View the Nexus concept demo",
+    "contactCta": "Check whether ERP fits our factory",
+    "demoNote": "The Nexus demo uses concept screens and sample data. The public version has not been released.",
     "status": {
       "badge": "Public release in preparation",
-      "title": "Confirm the scope before you plan adoption.",
-      "description": "We can discuss factory requirements and adoption conditions now. Public source code, deployment documentation and downloads will accompany the release.",
+      "title": "Assess fit and preparation now.",
+      "description": "Discuss your factory’s requirements, data formats and maintenance responsibilities now. Downloads and deployment documents will correspond to a released version.",
       "licenseLabel": "Planned license",
       "license": "Apache-2.0",
-      "hostingLabel": "Hosting",
-      "hosting": "Self-hosted and maintained by the factory",
-      "scopeLabel": "First release",
-      "scope": "No Taiwanese flexible working-hour arrangements"
+      "hostingLabel": "After release",
+      "hosting": "Factory arranges deployment and maintenance",
+      "scopeLabel": "First-release limit",
+      "scope": "No variable working-hour arrangements"
     },
     "scopeEyebrow": "PLANNED PRODUCT SCOPE",
-    "scopeTitle": "Connect HR and operational records.",
-    "scopeDescription": "The first release focuses on Taiwan factories with shift work. Shared scope also includes calendars, expense claims and role-based permissions so IT, HR and managers can work from the same records.",
+    "scopeTitle": "Check whether these workflows meet your needs.",
+    "scopeDescription": "This is the planned first-release scope. It also includes calendars, expense claims and role permissions. Asper reviews your workflows and available data before assessing fit.",
     "modules": [
-      { "title": "People and attendance", "description": "Organize staff, teams and time-clock sources. HR reviews attendance records and exceptions." },
-      { "title": "Shifts, leave and overtime", "description": "Map shifts to workdays. Employees submit requests for supervisors to approve." },
-      { "title": "Payroll and approvals", "description": "Connect approved attendance, leave and overtime records to payroll preparation, with supporting records." },
-      { "title": "Purchasing and inventory", "description": "Connect requisitions, quotations, purchase orders and receipts with supplier, material and stock records." }
+      {
+        "title": "People and attendance",
+        "description": "Organize staff, teams and time-clock sources. HR reviews attendance records and exceptions."
+      },
+      {
+        "title": "Shifts, leave and overtime",
+        "description": "Map shifts to workdays. Employees submit requests for supervisors to approve."
+      },
+      {
+        "title": "Payroll and approvals",
+        "description": "Connect approved attendance, leave and overtime records to payroll preparation, with supporting records."
+      },
+      {
+        "title": "Purchasing and inventory",
+        "description": "Connect requisitions, quotations, purchase orders and receipts with supplier, material and stock records."
+      }
     ],
     "workflow": {
       "eyebrow": "ONE OPERATING CYCLE",
       "title": "From shift schedules to a month-end you can review.",
       "description": "This is the planned attendance workflow. Adoption starts by confirming time-clock sources, working-hour arrangements and opening balances.",
       "steps": [
-        { "title": "Set up people and shifts", "description": "HR confirms teams, reporting lines, shifts and workdays." },
-        { "title": "Import and review clock records", "description": "HR checks shifts and handles missing or overnight clock records." },
-        { "title": "Complete requests and approvals", "description": "Employees and supervisors confirm leave, overtime and time off in lieu." },
-        { "title": "Review month-end records", "description": "HR and finance review settlement records before payroll preparation." }
+        {
+          "title": "Set up people and shifts",
+          "description": "HR confirms teams, reporting lines, shifts and workdays."
+        },
+        {
+          "title": "Import and review clock records",
+          "description": "HR checks shifts and handles missing or overnight clock records."
+        },
+        {
+          "title": "Complete requests and approvals",
+          "description": "Employees and supervisors confirm leave, overtime and time off in lieu."
+        },
+        {
+          "title": "Review month-end records",
+          "description": "HR and finance review settlement records before payroll preparation."
+        }
       ]
     },
     "preparation": {
@@ -59,13 +83,22 @@
       "status": "This is a planned workflow. Asper staff currently handle adoption discussions."
     },
     "services": {
-      "eyebrow": "IMPLEMENTATION AND CONTINUED USE",
-      "title": "Clear scopes for the open-source product and paid services.",
-      "description": "Factories can plan to self-host. When Asper support is needed, we confirm the project scope and quote based on data and maintenance requirements.",
+      "eyebrow": "Two adoption options after release",
+      "title": "Responsibilities for open-source software and paid adoption.",
+      "description": "After the public release, factories can adopt the software themselves or ask Asper for assistance. Both parties agree on scope and a quote before data migration, configuration, training and acceptance.",
       "items": [
-        { "title": "Migration and deployment", "description": "Confirm existing formats, import scope and opening balances, then plan deployment and acceptance." },
-        { "title": "Workflow setup and training", "description": "Review workflows with HR, supervisors and IT so the owners can complete one operating cycle." },
-        { "title": "Updates and maintenance support", "description": "Define responsibilities for backups, version updates and support based on factory needs." }
+        {
+          "title": "Migration and deployment",
+          "description": "Review source formats, import scope and opening data, then plan deployment and acceptance."
+        },
+        {
+          "title": "Configuration and training",
+          "description": "Review workflows with HR, managers and IT so the owners can complete an operational cycle."
+        },
+        {
+          "title": "Updates and maintenance assistance",
+          "description": "Define responsibilities for backups, version updates and support according to your needs."
+        }
       ]
     },
     "esg": {
@@ -75,15 +108,115 @@
     },
     "faqTitle": "Common adoption questions",
     "questions": [
-      { "title": "Can I download the open-source version now?", "answer": "The public version has not been released. Apache-2.0 is the planned license. You can view the Nexus concept demo and discuss early adoption conditions with Asper." },
-      { "title": "Does the first release support flexible working-hour arrangements?", "answer": "The first release does not support flexible working-hour arrangements. Asper will confirm your factory's arrangements before assessing whether adoption is suitable." },
-      { "title": "Can we use ESG services with our existing ERP?", "answer": "We can discuss connections from your existing ERP, Excel or supporting documents. ESG projects confirm data needs for the required deliverable, so the factory can keep its existing systems." },
-      { "title": "How does Asper access data in a self-hosted factory?", "answer": "The factory manages its self-hosted data. Implementation or ESG services require a separate agreement on authorized data, purpose and service scope." }
+      {
+        "title": "Can we download the open-source version now?",
+        "answer": "The public version has not been released. Apache-2.0 is the planned license. You can assess workflow fit, data formats and preparation now. Downloads and installation documents will correspond to a released version."
+      },
+      {
+        "title": "Does every factory with shifts fit?",
+        "answer": "Shift work is not the same as variable working-hour arrangements. The first release excludes Taiwan’s two-, four- and eight-week variable working-hour regimes. Asper reviews arrangements, shifts and punch formats before assessing fit."
+      },
+      {
+        "title": "Do we need paid assistance to use the core?",
+        "answer": "After release, factories can use the core under its public license. Paid Asper work covers migration, configuration, training, acceptance and agreed support or maintenance."
+      },
+      {
+        "title": "Can IT get installation and compatibility documents now?",
+        "answer": "First-release deployment requirements and compatibility are still being validated. Review data and maintenance needs first. Versioned installation, backup/restore and upgrade documents will accompany the release."
+      },
+      {
+        "title": "Can we use ESG services with our existing ERP?",
+        "answer": "Start with existing ERP, spreadsheets or documents. An ESG project defines data needs for a specific deliverable, and your factory can keep its existing systems."
+      },
+      {
+        "title": "How does Asper access a self-hosted factory’s data?",
+        "answer": "The factory manages its data. Adoption or ESG services require a separate agreement on authorized data, purposes and service scope."
+      }
     ],
     "contact": {
-      "title": "Start with one factory operating cycle.",
-      "description": "Tell us about your HR or purchasing challenges, working-hour arrangements and IT maintenance setup. Asper will help confirm the scope and preparation needed."
-    }
+      "title": "Assess fit while the public version is being prepared.",
+      "description": "Tell us one operational problem, your working-hour arrangements, shifts, punch format and IT responsibilities. An Asper team member reviews scope and preparation with you.",
+      "steps": [
+        {
+          "title": "The factory describes its needs",
+          "description": "Describe the operational problem, modules needed, working-hour arrangements, punch source and maintenance responsibilities."
+        },
+        {
+          "title": "Asper reviews fit and preparation",
+          "description": "Asper reviews working-hour arrangements and data sources, then identifies applicable workflows, gaps and preparation tasks."
+        },
+        {
+          "title": "Both parties agree on next steps",
+          "description": "Based on available versions and readiness, discuss pilot or paid adoption scope, responsibilities and a quote."
+        }
+      ],
+      "resultTitle": "Confirm fit before arranging adoption.",
+      "resultDescription": "The first assessment identifies workflows to evaluate and data to prepare. A pilot or deployment requires further agreement on the version, conditions and work scope.",
+      "note": "The button opens an email draft. An Asper team member handles assessment; deployment depends on the released version and agreed conditions."
+    },
+    "scopeCta": "Review first-release scope",
+    "eligibility": {
+      "fitTitle": "Factories to assess first",
+      "fitItems": [
+        "You want to organize one roster, attendance, HR or procurement/inventory workflow.",
+        "An IT or maintenance owner can discuss deployment, backups and updates.",
+        "You can describe working-hour arrangements, shifts, punch exports and opening data."
+      ],
+      "limitsTitle": "First-release limits and exclusions",
+      "limitsItems": [
+        "Taiwan’s two-, four- and eight-week variable working-hour arrangements are not supported.",
+        "BOMs, work orders, production and customer-specific processes are outside the generic open-source scope.",
+        "Punch-clock compatibility and formats require review; real-time integrations are assessed separately."
+      ],
+      "note": "Shift work is not the same as variable working-hour arrangements. Asper reviews the working-hour regime and roster before assessing first-release fit."
+    },
+    "readiness": {
+      "badge": "IT assessment and release preparation",
+      "title": "What can IT check now?",
+      "description": "Review punch and import formats, deployment context and maintenance responsibilities. Production installation must follow a released version and its documentation.",
+      "items": [
+        "Now: confirm data sources, import formats and a maintenance owner.",
+        "At release: versioned installation, backup/restore and upgrade documentation.",
+        "Deployment requirements and compatibility: published after first-release validation."
+      ]
+    },
+    "comparison": {
+      "caption": "Responsibility comparison after the public release",
+      "itemLabel": "Item",
+      "selfLabel": "Factory-led adoption",
+      "paidLabel": "Paid Asper assistance",
+      "hint": "On mobile, swipe horizontally to read the comparison.",
+      "rows": [
+        {
+          "item": "Source code",
+          "self": "Use, modify and self-host under the planned Apache-2.0 license.",
+          "paid": "Use the same public core. Adoption assistance is defined per project."
+        },
+        {
+          "item": "Data and workflows",
+          "self": "The factory prepares, imports, configures and reviews its data.",
+          "paid": "Asper assists with migration, configuration, training and acceptance."
+        },
+        {
+          "item": "Deployment and maintenance",
+          "self": "The factory arranges servers, updates, backups and restores.",
+          "paid": "Both parties agree on deployment, maintenance and support responsibilities. Full hosting by Asper is not assumed."
+        },
+        {
+          "item": "Support",
+          "self": "After release, report issues through public documentation, maintenance policies and community processes.",
+          "paid": "Support and maintenance follow an agreement. Scope, hours and fees are specified separately."
+        },
+        {
+          "item": "Costs and ESG",
+          "self": "The factory arranges infrastructure and maintenance staff. ESG data needs are assessed separately.",
+          "paid": "Adoption and maintenance are quoted per project. ESG scope depends on the output, data and work required."
+        }
+      ],
+      "note": "The open-source license and adoption service have separate scopes. Infrastructure and maintenance still have costs; pilot and service conditions require agreement."
+    },
+    "emailSubject": "Nexus ERP fit and adoption assessment",
+    "emailBody": "Workflow or modules to organize:\nWorking-hour arrangements and shifts:\nPunch source or export format:\nCurrent ERP, spreadsheets or opening data:\nIT and maintenance responsibilities:\nPreferred assessment timing, if any:\n"
   },
   "esg": {
     "eyebrow": "NEXUS ESG · PROJECT SERVICES",
