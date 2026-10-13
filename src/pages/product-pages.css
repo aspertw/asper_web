@@ -560,6 +560,23 @@
   color: var(--product-accent);
 }
 
+.esg-card-label, .esg-card-request > span { display: block; color: var(--product-accent); font-size: .75rem; margin-bottom: 6px; }
+.esg-delivery-request { color: #dbeade; font-size: .95rem; line-height: 1.85; margin-bottom: 14px; }
+.esg-delivery-request > span { color: var(--product-accent); margin-right: 12px; }
+.esg-scope-panel { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 36px; margin-top: 28px; padding: 28px; border: 1px solid #284233; border-radius: 12px; background: #0b1510; }
+.esg-scope-panel h3, .esg-start-process h3 { font-family: var(--font-body); font-size: 1.2rem; line-height: 1.6; margin-bottom: 12px; }
+.esg-scope-panel p { color: var(--product-copy); font-size: .88rem; line-height: 1.9; }
+.esg-scope-panel .product-eyebrow { color: var(--product-accent); font-size: .75rem; margin-bottom: 12px; }
+.esg-scope-panel .esg-scope-note { color: #d8e9de; }
+.esg-scope-details h4 { font-family: var(--font-body); font-size: .95rem; line-height: 1.6; margin-bottom: 8px; }
+.esg-scope-details h4:not(:first-child) { margin-top: 20px; }
+.esg-input-note { margin: 0 0 24px; }
+.esg-delivery-scope { margin-top: 24px; padding: 20px 24px; border-left: 2px solid var(--product-accent); background: #0b1510; }
+.esg-delivery-scope h3 { font-family: var(--font-body); font-size: .88rem; line-height: 1.6; margin-bottom: 8px; }
+.esg-delivery-scope p { color: var(--product-copy); font-size: .88rem; line-height: 1.9; }
+.esg-start-link { margin-top: 24px; }
+.esg-start-process { margin-top: 36px; }
+
 .erp-demo-link { color: var(--product-accent); text-decoration: underline; text-underline-offset: 3px; }
 .erp-fit-grid { margin-top: 24px; }
 .erp-readiness h3, .erp-start-flow + .product-contact-panel h3 { font-family: var(--font-body); font-size: 1.15rem; line-height: 1.5; margin-bottom: 12px; }
@@ -607,6 +624,7 @@
   .product-delivery-heading { gap: 18px; }
   .product-delivery-index { font-size: 1.8rem; margin-top: 36px; }
   .product-section--closing { padding-top: 0; }
+  .esg-scope-panel { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 24px; }
   .erp-start-flow { grid-template-columns: minmax(0, 1fr); }
   .erp-comparison-hint { display: block; }
   .erp-comparison th, .erp-comparison td { padding: 16px; }
