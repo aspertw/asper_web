@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "erp": "開源 ERP",
+    "esg": "ESG 方案",
+    "menuOpen": "開啟導覽選單",
+    "menuClose": "關閉導覽選單"
+  },
+  "home": {
+    "tag": "工廠營運 × 永續資料",
+    "title": "從每天的工廠作業",
+    "titleAccent": "走向可追溯的永續資料",
+    "description": "用 Nexus 整理人資、採購與庫存作業。從既有 ERP 或 Excel 取得資料，逐步完成廢棄物流向、碳盤查與產品碳足跡的資料交付。",
+    "erpCta": "探索開源 ERP",
+    "esgCta": "了解 ESG 方案",
+    "note": "開源版籌備中 · ESG 依專案範圍評估",
+    "mapTitle": "選擇適合工廠的起點",
+    "mapErp": "改善日常營運",
+    "mapErpDetail": "人資 · 出勤 · 採購 · 庫存",
+    "mapExisting": "保留既有系統",
+    "mapExistingDetail": "ERP · Excel · 單據資料",
+    "mapData": "整理資料與保存來源",
+    "mapReview": "人員核對",
+    "mapOutput": "完成 ESG 資料交付",
+    "routesTag": "兩條導入路徑",
+    "routesTitle": "從你現在的問題開始",
+    "routesDescription": "工廠可以先改善一項作業，也可以直接整理客戶要求的 ESG 資料。",
+    "erpRole": "給 HR、IT 與工廠主管",
+    "erpTitle": "先把日常作業接起來",
+    "erpBody": "整理班表、打卡與人資帳本，再銜接採購和庫存。了解自架條件、首版範圍與導入準備。",
+    "erpLink": "查看開源 ERP 範圍",
+    "esgRole": "給 ESG、廠務與資料負責人",
+    "esgTitle": "從現有資料完成交付",
+    "esgBody": "保留現有 ERP 或 Excel。先確認交付要求，再整理資料、追蹤缺件與核對來源。",
+    "esgLink": "選擇 ESG 交付成果",
+    "flowTag": "從來源到交付",
+    "flowTitle": "讓每一份資料都有來處",
+    "flowDescription": "Asper 以來源、期間與核對紀錄建立資料工作流。AI 協助整理屬於後續規劃，資料由人員核對與定案。",
+    "flowSteps": [
+      {
+        "title": "取得資料",
+        "body": "既有系統、單據與流向紀錄。"
+      },
+      {
+        "title": "整理缺口",
+        "body": "核對欄位、期間與單位。"
+      },
+      {
+        "title": "保留佐證",
+        "body": "連回來源，由人員確認。"
+      },
+      {
+        "title": "完成交付",
+        "body": "按實際要求整理輸出。"
+      }
+    ],
+    "materialsTag": "材料與回收",
+    "materialsTitle": "把材料辨識接到回收流向",
+    "materialsBody": "AsperScan 與回收場域經驗，支援材料資料與流向整理。從辨識資訊到批次交接，確認每一段資料的範圍。",
+    "visionLink": "了解材料辨識",
+    "traceLink": "查看流向方案",
+    "nextTitle": "先帶一項具體需求來",
+    "nextBody": "一個出勤問題、一份客戶表單，或一批資料。Asper 先和你確認範圍，再討論導入方式。",
+    "nextCta": "以 Email 討論導入",
+    "emailSubject": "Asper 工廠導入需求"
+  },
+  "demo": {
+    "label": "示範資料",
+    "notice": "本頁展示介面與工作流構想。數字、圖表與操作紀錄使用示範資料；正式可用範圍依專案確認。",
+    "window": "示範圖表",
+    "operations": "示範操作紀錄 · {{count}} 筆",
+    "streams": "示範資料 · {{count}} 筆",
+    "badge": "DEMO"
+  },
+  "meta": {
+    "homeTitle": "工廠營運與 ESG 資料 | Asper 捷寶全球",
+    "homeDescription": "了解 Nexus 開源 ERP 規劃與 ESG 資料服務。從人資營運或既有 ERP 資料開始，整理廢棄物流向、碳盤查與產品碳足跡交付。",
+    "erpTitle": "Nexus 開源 ERP | Asper 捷寶全球",
+    "erpDescription": "探索 Nexus 開源 ERP 的核准範圍、自架條件與首版限制。公開版本籌備中。",
+    "esgTitle": "工廠 ESG 資料方案 | Asper 捷寶全球",
+    "esgDescription": "從既有 ERP 或 Excel 整理廢棄物流向、工廠碳盤查與產品碳足跡資料。按交付需求評估資料整備與導入。"
+  }
+}

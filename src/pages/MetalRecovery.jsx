@@ -8,6 +8,7 @@ import {
   Recycle, BarChart3, Layers, ThermometerSun,
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import DemoNotice from '../components/DemoNotice';
 
 const CarbonFiberRecovery = () => {
   const { t } = useTranslation();
@@ -73,6 +74,7 @@ const CarbonFiberRecovery = () => {
             {t('metal.title')}
           </h1>
           <p className="section-subtitle">{t('metal.subtitle')}</p>
+          <DemoNotice />
 
           {/* ── 2. Metric Cards ── */}
           <div className="grid-4" style={{ marginBottom: 80 }}>

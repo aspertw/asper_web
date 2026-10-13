@@ -1,16 +1,45 @@
-# React + Vite
+# Asper company website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React 19 and Vite company website for Asper International.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+npm ci
+npm run dev -- --host 127.0.0.1
+```
 
-## React Compiler
+The first factory-entry iteration uses Traditional Chinese by default. The language menu also provides English, Japanese and Korean content.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Factory entry routes
 
-## Expanding the ESLint configuration
+| Route | Purpose | Next step |
+| --- | --- | --- |
+| `/` | Choose operational ERP adoption or ESG data delivery | Open `/nexus/erp` or `/esg` |
+| `/nexus/erp` | Review planned open-source ERP scope, self-hosting and first-release limits | View the existing Nexus demonstration or discuss early adoption by email |
+| `/esg` | Review waste traceability, corporate carbon-inventory data and product carbon-footprint data | Discuss one delivery requirement by email |
+| `/nexus` | Illustrative Nexus interface and workflow concepts | Review the visible sample-data notice |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Existing material, recovery, partner and share routes remain available. Charts and operation logs on the existing product demonstration pages are labeled as sample data.
+
+The open-source ERP public release is in preparation. The website does not link to a public download or repository that has not been released. Apache-2.0 is the planned license. Flexible working-hour arrangements are outside the first release.
+
+ESG services are evaluated per project. AI-assisted data preparation is a planned workflow capability; this iteration does not implement an operational Agent. Existing ERP and spreadsheet data can be discussed without adopting Nexus ERP.
+
+The partner form's reception behavior is unchanged by this iteration, as requested. New factory-entry calls to action use explicit email links and do not submit the partner form.
+
+## Validation
+
+```sh
+npm run lint
+npm run build
+npm run preview -- --host 127.0.0.1
+```
+
+Review the homepage, both entry routes and demonstration labels at desktop and mobile sizes. Switch each supported language. Check the two entry links, the ERP demonstration link, the ESG waste section anchor and email link targets without sending email.
+
+Page titles and descriptions for the three new entry routes update on the client. Static generation, language-specific URLs, canonical tags, sitemap work, contact reception, production Agents and ERP source extraction belong to subsequent iterations.
+
+## Repository boundaries
+
+This repository contains the public company website. The ERP rules package, open-source ERP upstream, client-specific downstream and commercial ESG code are planned separately. Do not copy client data, contracts, ERP source or private repository history into this website repository.

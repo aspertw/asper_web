@@ -9,10 +9,16 @@ import SupplyChain from './pages/SupplyChain';
 import MetalRecovery from './pages/MetalRecovery';
 import Partners from './pages/Partners';
 import SharePage from './SharePage';
+import OpenSourceERP from './pages/OpenSourceERP';
+import ESG from './pages/ESG';
+import RouteMetadata from './components/RouteMetadata';
+import RouteScroll from './components/RouteScroll';
 
 function App() {
   return (
     <Router>
+      <RouteMetadata />
+      <RouteScroll />
       <ParticleBackground />
       <Navbar />
       <main style={{ position: 'relative', zIndex: 1 }}>
@@ -20,6 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ai-vision" element={<AIVision />} />
           <Route path="/nexus" element={<NexusOS />} />
+          <Route path="/nexus/erp" element={<OpenSourceERP />} />
+          <Route path="/esg" element={<ESG />} />
           <Route path="/supply-chain" element={<SupplyChain />} />
           <Route path="/metal-recovery" element={<MetalRecovery />} />
           <Route path="/partners" element={<Partners />} />

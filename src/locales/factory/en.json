@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "erp": "Open ERP",
+    "esg": "ESG",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu"
+  },
+  "home": {
+    "tag": "Factory operations × sustainability data",
+    "title": "Start with everyday operations.",
+    "titleAccent": "Build traceable sustainability data.",
+    "description": "Organize HR, procurement and inventory with Nexus. Connect existing ERP or spreadsheet data to prepare waste traceability, carbon inventories and product carbon-footprint deliveries.",
+    "erpCta": "Explore open-source ERP",
+    "esgCta": "Explore ESG services",
+    "note": "Open-source release in preparation · ESG scope assessed per project",
+    "mapTitle": "Choose your factory’s starting point",
+    "mapErp": "Improve daily operations",
+    "mapErpDetail": "HR · Attendance · Procurement · Inventory",
+    "mapExisting": "Keep your existing systems",
+    "mapExistingDetail": "ERP · Spreadsheets · Source documents",
+    "mapData": "Organize data and retain sources",
+    "mapReview": "Human review",
+    "mapOutput": "Prepare an ESG data delivery",
+    "routesTag": "Two adoption routes",
+    "routesTitle": "Start with the problem you have today.",
+    "routesDescription": "Improve one operational workflow or start preparing the ESG data your customer needs.",
+    "erpRole": "For HR, IT and factory managers",
+    "erpTitle": "Connect everyday workflows.",
+    "erpBody": "Organize rosters, punches and HR records, then connect procurement and inventory. Review self-hosting requirements, first-release scope and adoption preparation.",
+    "erpLink": "Review ERP scope",
+    "esgRole": "For ESG, facilities and data owners",
+    "esgTitle": "Deliver with the data you already have.",
+    "esgBody": "Keep your ERP or spreadsheets. Define the requested delivery, organize data, track gaps and review source evidence.",
+    "esgLink": "Choose an ESG outcome",
+    "flowTag": "From source to delivery",
+    "flowTitle": "Keep a source behind every record.",
+    "flowDescription": "Asper builds workflows around sources, periods and review records. AI-assisted preparation is planned for a later stage; people review and finalize the data.",
+    "flowSteps": [
+      {
+        "title": "Collect",
+        "body": "Existing systems, documents and flow records."
+      },
+      {
+        "title": "Check gaps",
+        "body": "Review fields, periods and units."
+      },
+      {
+        "title": "Keep evidence",
+        "body": "Link sources for human review."
+      },
+      {
+        "title": "Deliver",
+        "body": "Prepare the requested output."
+      }
+    ],
+    "materialsTag": "Materials and recovery",
+    "materialsTitle": "Connect material identification to recovery flows.",
+    "materialsBody": "AsperScan and field experience support material data and flow preparation. Define each data boundary, from identification to batch handover.",
+    "visionLink": "Explore material identification",
+    "traceLink": "Explore traceability",
+    "nextTitle": "Bring one concrete requirement.",
+    "nextBody": "An attendance problem, a customer form or a set of records. We define the scope together before discussing adoption.",
+    "nextCta": "Discuss adoption by email",
+    "emailSubject": "Asper factory adoption inquiry"
+  },
+  "demo": {
+    "label": "Sample data",
+    "notice": "This page illustrates interface and workflow concepts. Figures, charts and operation logs use sample data; availability is confirmed for each project.",
+    "window": "Sample charts",
+    "operations": "Sample operations · {{count}} records",
+    "streams": "Sample data · {{count}} records",
+    "badge": "DEMO"
+  },
+  "meta": {
+    "homeTitle": "Factory Operations and ESG Data | Asper",
+    "homeDescription": "Explore Nexus open-source ERP plans and ESG data services. Start with factory operations or existing ERP data to prepare traceability, carbon inventories and product carbon-footprint data.",
+    "erpTitle": "Nexus Open-source ERP | Asper",
+    "erpDescription": "Review planned Nexus open-source ERP scope, self-hosting requirements and first-release limitations. Public release in preparation.",
+    "esgTitle": "Factory ESG Data Services | Asper",
+    "esgDescription": "Prepare waste traceability, carbon inventories and product carbon-footprint data from your ERP or spreadsheets. Assess scope for each requested delivery."
+  }
+}

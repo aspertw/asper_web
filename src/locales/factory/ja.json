@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "erp": "オープン ERP",
+    "esg": "ESG",
+    "menuOpen": "ナビゲーションを開く",
+    "menuClose": "ナビゲーションを閉じる"
+  },
+  "home": {
+    "tag": "工場業務 × サステナビリティデータ",
+    "title": "毎日の工場業務から、",
+    "titleAccent": "追跡できる環境データへ。",
+    "description": "Nexus で人事、購買、在庫の業務を整理。既存 ERP や Excel のデータから、廃棄物の流れ、組織の排出量、製品カーボンフットプリントの提出資料を準備します。",
+    "erpCta": "オープン ERP を見る",
+    "esgCta": "ESG サービスを見る",
+    "note": "公開版を準備中 · ESG の範囲は案件ごとに確認",
+    "mapTitle": "工場に合う出発点を選ぶ",
+    "mapErp": "日常業務を改善",
+    "mapErpDetail": "人事 · 勤怠 · 購買 · 在庫",
+    "mapExisting": "既存システムを活用",
+    "mapExistingDetail": "ERP · Excel · 原始資料",
+    "mapData": "データを整理し出典を保存",
+    "mapReview": "担当者が確認",
+    "mapOutput": "ESG 提出資料を準備",
+    "routesTag": "二つの導入経路",
+    "routesTitle": "今の課題から始める。",
+    "routesDescription": "一つの業務を改善する方法と、顧客が求める ESG 資料から始める方法があります。",
+    "erpRole": "人事・IT・工場管理者向け",
+    "erpTitle": "日常業務をつなぐ。",
+    "erpBody": "シフト、打刻、人事記録を整理し、購買と在庫につなぎます。自社運用の条件、初版の範囲、導入準備をご確認ください。",
+    "erpLink": "ERP の範囲を確認",
+    "esgRole": "ESG・設備・データ担当者向け",
+    "esgTitle": "既存データから提出資料へ。",
+    "esgBody": "既存 ERP や Excel を活用。提出要件を定義し、データを整理して不足と出典を確認します。",
+    "esgLink": "ESG の成果を選ぶ",
+    "flowTag": "出典から提出まで",
+    "flowTitle": "各記録に出典を残す。",
+    "flowDescription": "Asper は出典、期間、確認記録を中心に業務を設計。AI による整理は今後の計画で、担当者がデータを確認して確定します。",
+    "flowSteps": [
+      {
+        "title": "収集",
+        "body": "既存システム、資料、流れの記録。"
+      },
+      {
+        "title": "不足を確認",
+        "body": "項目、期間、単位を確認。"
+      },
+      {
+        "title": "証拠を保存",
+        "body": "出典につなぎ担当者が確認。"
+      },
+      {
+        "title": "提出",
+        "body": "要件に合わせて資料を整理。"
+      }
+    ],
+    "materialsTag": "材料と回収",
+    "materialsTitle": "材料の識別から回収の流れへ。",
+    "materialsBody": "AsperScan と現場経験を使って材料データと流れを整理。識別情報からバッチの引渡しまで、各段階の範囲を確認します。",
+    "visionLink": "材料識別を見る",
+    "traceLink": "追跡サービスを見る",
+    "nextTitle": "具体的な要件を一つ。",
+    "nextBody": "勤怠の課題、顧客の様式、データの一式。まず範囲を確認して導入方法を相談します。",
+    "nextCta": "メールで導入を相談",
+    "emailSubject": "Asper 工場導入の相談"
+  },
+  "demo": {
+    "label": "サンプルデータ",
+    "notice": "このページは画面と業務フローの構想を示します。数値、グラフ、操作記録はサンプルです。利用範囲は案件ごとに確認します。",
+    "window": "サンプルグラフ",
+    "operations": "操作例 · {{count}} 件",
+    "streams": "サンプルデータ · {{count}} 件",
+    "badge": "DEMO"
+  },
+  "meta": {
+    "homeTitle": "工場業務と ESG データ | Asper",
+    "homeDescription": "Nexus オープン ERP 計画と ESG データサービス。工場業務または既存 ERP データから、追跡と炭素関連の提出資料を準備します。",
+    "erpTitle": "Nexus オープン ERP | Asper",
+    "erpDescription": "Nexus オープン ERP の予定範囲、自社運用条件、初版の制限。公開版を準備中。",
+    "esgTitle": "工場 ESG データサービス | Asper",
+    "esgDescription": "既存 ERP や Excel から廃棄物追跡、組織排出量、製品カーボンフットプリントの資料を準備。"
+  }
+}
