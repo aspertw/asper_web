@@ -648,3 +648,37 @@
 @media (prefers-reduced-motion: reduce) {
   .product-card--link { transition: none; }
 }
+
+.product-page--compact .product-hero { padding: 64px 0 48px; }
+.product-page--compact .product-section { padding: 56px 0; }
+.product-page--compact .product-section--optional { padding: 20px 0; }
+.product-page--compact .product-section--closing { padding-top: 24px; }
+.product-page--compact .product-section-heading { margin-bottom: 24px; }
+.product-disclosure { margin-top: 20px; border: 1px solid #2a3946; border-radius: 12px; background: #0c121a; }
+.product-disclosure[id] { scroll-margin-top: 90px; }
+.product-disclosure > summary { padding: 16px 20px; color: #dce8f3; cursor: pointer; list-style-position: inside; font-size: .95rem; line-height: 1.7; }
+.product-disclosure > summary::marker { color: var(--product-accent); }
+.product-disclosure > summary svg { display: inline; vertical-align: middle; margin: 0 8px; color: var(--product-accent); }
+.product-disclosure[open] > summary { border-bottom: 1px solid #273641; }
+.product-disclosure-body { padding: 24px; }
+.product-disclosure-body .erp-fit-grid { margin-top: 0; }
+.product-disclosure-body .product-agent-strip { margin-top: 0; }
+.product-page--compact .product-section--optional .product-disclosure:first-child { margin-top: 0; }
+.esg-outcome-card { display: flex; flex-direction: column; }
+.esg-outcome-card p { margin-bottom: 16px; }
+.esg-card-actions { display: grid; gap: 12px; margin-top: auto; }
+.esg-card-actions .btn-primary { padding: 10px 14px; font-size: .82rem; min-height: 44px; }
+.esg-card-actions .product-text-link { font-size: .8rem; }
+.esg-paid-summary { margin-top: 24px; padding: 18px 22px; border-left: 2px solid var(--product-accent); background: #0b1510; }
+.esg-paid-summary h3 { font-family: var(--font-body); font-size: 1rem; margin-bottom: 8px; }
+.esg-paid-summary p, .esg-scope-details p { color: var(--product-copy); font-size: .88rem; line-height: 1.9; }
+.esg-selected-outcome { color: var(--product-copy); font-size: .9rem; line-height: 1.8; margin-top: 14px; }
+.esg-selected-outcome > span { color: var(--product-accent); }
+.esg-selected-outcome .product-text-link { margin-left: 12px; }
+@media (max-width: 768px) {
+  .product-page--compact .product-hero { padding: 48px 0 36px; }
+  .product-page--compact .product-section { padding: 40px 0; }
+  .product-page--compact .product-section--optional { padding: 16px 0; }
+  .product-page--compact .product-section--closing { padding-top: 16px; }
+  .product-disclosure-body { padding: 20px 16px; }
+}

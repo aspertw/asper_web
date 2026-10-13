@@ -8,27 +8,17 @@
   "home": {
     "tag": "Factory operations × customer data requests",
     "title": "Manage factory operations.",
-    "titleAccent": "Prepare the carbon and recovery records your customers need.",
-    "description": "Start with one operational problem or customer request. Asper reviews your workflows, available data and delivery requirements before discussing ERP adoption or an ESG data project.",
-    "erpCta": "Check if ERP fits our factory",
-    "esgCta": "Review ESG data requirements",
-    "note": "Already have an ERP? You can assess ESG services directly.",
-    "mapTitle": "What does your factory need to solve now?",
-    "mapErp": "Are rosters, attendance and procurement spread across spreadsheets?",
-    "mapErpDetail": "Review Nexus ERP scope, data sources and IT maintenance requirements first.",
-    "mapExisting": "Is a customer asking for carbon data or recovery evidence?",
-    "mapExistingDetail": "Start with one request for a carbon inventory, product carbon footprint or recovery traceability.",
-    "routesTag": "Prepare for the first discussion",
-    "routesTitle": "Start with one workflow or one customer request.",
-    "routesDescription": "If you have both needs, discuss the customer deadline first. ERP adoption can be assessed separately.",
-    "erpRole": "Nexus open-source ERP · Adoption assessment",
-    "erpTitle": "Describe the operational problem.",
-    "erpBody": "Describe one rostering, attendance or procurement problem and your current roster or data format. Asper reviews working-hour arrangements, adoption scope and maintenance responsibilities.",
-    "erpLink": "Review ERP scope and preparation",
-    "esgRole": "ESG data services · Project assessment",
-    "esgTitle": "Define what your customer needs and when.",
-    "esgBody": "Describe the request, deadline, facility or product, and your ERP, spreadsheet or document types. Asper reviews the requested output, data gaps and project scope.",
-    "esgLink": "Review ESG inputs and deliverables",
+    "titleAccent": "Prepare the records your customers need.",
+    "description": "Choose ERP for operations; ESG for carbon and recovery records.",
+    "erpCta": "Assess ERP fit",
+    "esgCta": "Choose an ESG outcome",
+    "note": "Already have an ERP? Start with ESG.",
+    "mapTitle": "Choose a path for your current problem",
+    "mapErp": "Hard to manage shifts, attendance or purchasing?",
+    "mapErpDetail": "Review workflows, data and maintenance needs first.",
+    "mapExisting": "Does a customer need carbon or recovery evidence?",
+    "mapExistingDetail": "Choose one data outcome and confirm the scope.",
+    "routesDescription": "Need both? Start with the customer deadline.",
     "flowTag": "From source to delivery",
     "flowTitle": "Keep a source behind every record.",
     "flowDescription": "Asper builds workflows around sources, periods and review records. AI-assisted preparation is planned for a later stage; people review and finalize the data.",
@@ -55,29 +45,29 @@
     "materialsBody": "Prepare recovery evidence from batch, weight, handover and treatment records. AsperScan material identification can provide one of these data sources.",
     "visionLink": "View the material identification demo",
     "traceLink": "Review recovery traceability services",
-    "nextTitle": "What happens after you contact Asper?",
-    "nextBody": "Email us your operational problem or customer request, deadline and available data. An Asper team member will help define the first scope to assess.",
-    "nextCta": "Email us your current requirement",
+    "nextTitle": "Unsure where to start?",
+    "nextBody": "Describe your needs and current tools. Mark unknown fields “to be confirmed”.",
+    "nextCta": "Open an enquiry draft",
     "emailSubject": "Asper factory adoption inquiry",
-    "existingBody": "Keep your ERP, spreadsheets and source documents. Assess data preparation and integration for the delivery you need.",
-    "erpStatus": "Open-source release in preparation · Discuss early adoption",
-    "esgStatus": "Paid project · Confirm scope and quote first",
+    "erpStatus": "Open-source release in preparation",
+    "esgStatus": "Paid project assessment",
     "contactSteps": [
       {
-        "title": "Confirm the need and deadline",
-        "body": "An Asper team member reviews the operational problem or customer request and delivery deadline."
+        "title": "Confirm the need",
+        "body": "Asper confirms the problem and deadline."
       },
       {
-        "title": "Review data and requirements",
-        "body": "We review sources, gaps and maintenance requirements together, then identify a feasible scope and the data to prepare."
+        "title": "Review the data",
+        "body": "Both parties review data and requirements."
       },
       {
-        "title": "Discuss scope and a quote",
-        "body": "Asper proposes an adoption or data-project scope. Work starts after both parties agree on the work, quote and acceptance criteria."
+        "title": "Agree on scope",
+        "body": "Confirm the work, quote and acceptance criteria."
       }
     ],
-    "contactNote": "The button opens an email draft with fields for your requirement. An Asper team member handles the follow-up discussion.",
-    "emailBody": "Requirement type: ERP adoption / ESG data\nOperational problem or customer request:\nTarget deadline, if any:\nCurrent ERP, spreadsheet or document types:\nFacility or product scope, if any:\n"
+    "contactNote": "You review and send the draft. An Asper team member follows up.",
+    "emailBody": "Company, contact person and contact details:\nNeed: ERP / ESG / to be confirmed\nOperational problem or customer request:\nTarget deadline (or to be confirmed):\nCurrent ERP, Excel files or records:\nSite, period or product (or to be confirmed):\n",
+    "moreTitle": "Explore data sources and recovery services"
   },
   "demo": {
     "label": "Sample data",

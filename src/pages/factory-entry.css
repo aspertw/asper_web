@@ -66,3 +66,36 @@
   .factory-contact { padding: 32px 22px; }
   .demo-notice { flex-direction: column; gap: 7px; }
 }
+
+.factory-home .video-hero-content { padding-top: 90px !important; }
+.factory-home .scroll-indicator { display: none !important; }
+.factory-home .factory-hero { padding-bottom: 40px; }
+.factory-home .factory-hero h1 { margin: 16px 0; }
+.factory-home .factory-choice { padding: 18px; }
+.factory-choice-heading { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.factory-choice-heading svg { color: #a3c7ff; flex-shrink: 0; }
+.factory-choice-heading h3 { margin: 0; }
+.factory-choice--green .factory-choice-heading svg { color: #b0e6c3; }
+.factory-choice-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.factory-choice-footer .factory-choice-status, .factory-choice-footer .factory-choice-action { margin: 0; }
+.factory-home .factory-existing { align-items: center; margin: 0; padding: 12px 14px; }
+.factory-home .factory-existing strong { margin: 0; font-size: .86rem; }
+.factory-choice-help { color: #bac9d3; font-size: .78rem; }
+.factory-home .section { padding: 56px 0; }
+.factory-home .factory-more-section { padding-top: 0; }
+.factory-disclosure { border: 1px solid #283b4b; border-radius: 12px; background: #0c141e; }
+.factory-disclosure > summary { padding: 18px 22px; cursor: pointer; color: #d8e4ef; font-size: 1rem; list-style-position: inside; }
+.factory-disclosure > summary::marker { color: #9fc5ff; }
+.factory-disclosure > summary:focus-visible { outline: 2px solid #9fc5ff; outline-offset: 4px; }
+.factory-details-body { padding: 24px; }
+.factory-details-body .factory-materials { margin-top: 24px; }
+.draft-address { display: inline-block; font-family: var(--font-mono); overflow-wrap: anywhere; }
+@media (max-width: 850px) {
+  .factory-home .video-hero-content { padding-top: 88px !important; padding-bottom: 24px !important; }
+  .factory-home .factory-hero { padding-top: 0; padding-bottom: 0; gap: 18px; }
+  .factory-home .factory-hero-intro { padding: 16px; }
+  .factory-home .factory-hero h1 { font-size: 1.95rem; line-height: 1.25; margin: 14px 0; }
+  .factory-home .factory-lead { font-size: .95rem; }
+  .factory-home .factory-choices { gap: 12px; }
+  .factory-home .factory-choice h3 { font-size: 1.05rem; }
+}

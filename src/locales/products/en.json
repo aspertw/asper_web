@@ -6,41 +6,41 @@
   },
   "erp": {
     "eyebrow": "NEXUS · OPEN-SOURCE ERP",
-    "title": "Connect rosters, punches, leave and overtime records to month-end review.",
-    "description": "Nexus plans to cover HR and attendance, as well as requisitions, procurement and inventory. We first review working-hour arrangements, data formats and IT responsibilities. Factories can self-host once the public version is released.",
+    "title": "Connect rosters, punches and month-end records.",
+    "description": "The first release plans HR, attendance, purchasing and inventory. Assess your factory first; deployment follows the public release.",
     "demoCta": "View the Nexus concept demo",
-    "contactCta": "Check whether ERP fits our factory",
-    "demoNote": "The Nexus demo uses concept screens and sample data. The public version has not been released.",
+    "contactCta": "Open an ERP enquiry draft",
+    "demoNote": "The concept demo uses sample data.",
     "status": {
       "badge": "Public release in preparation",
-      "title": "Assess fit and preparation now.",
-      "description": "Discuss your factory’s requirements, data formats and maintenance responsibilities now. Downloads and deployment documents will correspond to a released version.",
+      "title": "The public release is in preparation. Assess fit now.",
+      "description": "Downloads and deployment guides will accompany each release.",
       "licenseLabel": "Planned license",
       "license": "Apache-2.0",
       "hostingLabel": "After release",
-      "hosting": "Factory arranges deployment and maintenance",
+      "hosting": "Factory arranges maintenance",
       "scopeLabel": "First-release limit",
       "scope": "No variable working-hour arrangements"
     },
     "scopeEyebrow": "PLANNED PRODUCT SCOPE",
-    "scopeTitle": "Check whether these workflows meet your needs.",
-    "scopeDescription": "This is the planned first-release scope. It also includes calendars, expense claims and role permissions. Asper reviews your workflows and available data before assessing fit.",
+    "scopeTitle": "See the planned first-release workflows.",
+    "scopeDescription": "Also includes calendars, expense claims and role permissions.",
     "modules": [
       {
         "title": "People and attendance",
-        "description": "Organize staff, teams and time-clock sources. HR reviews attendance records and exceptions."
+        "description": "Organize staff, punches and attendance exceptions."
       },
       {
         "title": "Shifts, leave and overtime",
-        "description": "Map shifts to workdays. Employees submit requests for supervisors to approve."
+        "description": "Rosters, requests and supervisor approvals."
       },
       {
         "title": "Payroll and approvals",
-        "description": "Connect approved attendance, leave and overtime records to payroll preparation, with supporting records."
+        "description": "Connect approved records to payroll preparation."
       },
       {
         "title": "Purchasing and inventory",
-        "description": "Connect requisitions, quotations, purchase orders and receipts with supplier, material and stock records."
+        "description": "Requisitions, purchasing, receipts and inventory."
       }
     ],
     "workflow": {
@@ -64,47 +64,47 @@
           "title": "Review month-end records",
           "description": "HR and finance review settlement records before payroll preparation."
         }
-      ]
+      ],
+      "detailsCta": "See the roster-to-month-end workflow"
     },
     "preparation": {
       "eyebrow": "FOR FACTORY IT AND HR",
-      "title": "Bring these details to the first conversation.",
-      "description": "Asper confirms how your factory works before assessing implementation scope.",
+      "title": "Details to review later with HR and IT",
+      "description": "Start with the operational problem. Use this list for the later assessment.",
       "items": [
         "Staff, teams and supervisor approval workflows",
         "Shifts, working-hour arrangements and time-clock export formats",
         "Opening balances for leave, time off in lieu and inventory",
         "Owners for deployment, backups, updates and daily maintenance"
-      ]
+      ],
+      "detailsCta": "Expand the HR and IT checklist"
     },
     "agent": {
       "title": "Where the adoption assistant will fit",
       "description": "A future website agent will use public documentation and factory requirements to help prepare deployment and data checklists. Answers will link to their documentation sources.",
-      "status": "This is a planned workflow. Asper staff currently handle adoption discussions."
+      "status": "This is a planned workflow. Asper staff currently handle adoption discussions.",
+      "detailsCta": "See the future Agent plan"
     },
     "services": {
       "eyebrow": "Two adoption options after release",
-      "title": "Responsibilities for open-source software and paid adoption.",
-      "description": "After the public release, factories can adopt the software themselves or ask Asper for assistance. Both parties agree on scope and a quote before data migration, configuration, training and acceptance.",
-      "items": [
+      "title": "Adopt it yourself, or ask Asper for help.",
+      "description": "Use the core after release. Paid assistance is quoted by project.",
+      "note": "Support and hosting are agreed separately. ESG is assessed by outcome.",
+      "modes": [
         {
-          "title": "Migration and deployment",
-          "description": "Review source formats, import scope and opening data, then plan deployment and acceptance."
+          "title": "Self-adoption after release",
+          "description": "Your factory arranges servers, backups and updates."
         },
         {
-          "title": "Configuration and training",
-          "description": "Review workflows with HR, managers and IT so the owners can complete an operational cycle."
-        },
-        {
-          "title": "Updates and maintenance assistance",
-          "description": "Define responsibilities for backups, version updates and support according to your needs."
+          "title": "Paid adoption assistance",
+          "description": "Asper assists with migration, setup, training and maintenance."
         }
       ]
     },
     "esg": {
-      "title": "Next, put the records to work for ESG delivery.",
-      "description": "Purchasing and inventory can provide part of the ESG data. A carbon inventory also needs fuel consumption and energy records. Product carbon footprints need product, process and allocation data. Asper assesses connections for the required outcome.",
-      "cta": "Explore ESG services"
+      "title": "Already have an ERP? You can start with ESG.",
+      "description": "Purchasing and inventory provide some data; energy and product records need a separate assessment.",
+      "cta": "Choose an ESG outcome"
     },
     "faqTitle": "Common adoption questions",
     "questions": [
@@ -134,25 +134,25 @@
       }
     ],
     "contact": {
-      "title": "Assess fit while the public version is being prepared.",
-      "description": "Tell us one operational problem, your working-hour arrangements, shifts, punch format and IT responsibilities. An Asper team member reviews scope and preparation with you.",
+      "title": "Start with one operational problem.",
+      "description": "Mark unclear working hours, formats or IT roles “to be confirmed”.",
       "steps": [
         {
           "title": "The factory describes its needs",
-          "description": "Describe the operational problem, modules needed, working-hour arrangements, punch source and maintenance responsibilities."
+          "description": "Your factory describes the problem and current tools."
         },
         {
           "title": "Asper reviews fit and preparation",
-          "description": "Asper reviews working-hour arrangements and data sources, then identifies applicable workflows, gaps and preparation tasks."
+          "description": "Asper reviews working-hour arrangements and data gaps."
         },
         {
           "title": "Both parties agree on next steps",
-          "description": "Based on available versions and readiness, discuss pilot or paid adoption scope, responsibilities and a quote."
+          "description": "Both parties agree on work, responsibilities and pricing."
         }
       ],
-      "resultTitle": "Confirm fit before arranging adoption.",
-      "resultDescription": "The first assessment identifies workflows to evaluate and data to prepare. A pilot or deployment requires further agreement on the version, conditions and work scope.",
-      "note": "The button opens an email draft. An Asper team member handles assessment; deployment depends on the released version and agreed conditions."
+      "resultTitle": "An Asper team member handles your enquiry.",
+      "resultDescription": "Confirm fit and preparation, then discuss the version, adoption requirements and quote.",
+      "note": "You review and send the draft. Pilots and deployment depend on the released version."
     },
     "scopeCta": "Review first-release scope",
     "eligibility": {
@@ -168,7 +168,9 @@
         "BOMs, work orders, production and customer-specific processes are outside the generic open-source scope.",
         "Punch-clock compatibility and formats require review; real-time integrations are assessed separately."
       ],
-      "note": "Shift work is not the same as variable working-hour arrangements. Asper reviews the working-hour regime and roster before assessing first-release fit."
+      "note": "Shift work is not the same as variable working-hour arrangements. Asper reviews the working-hour regime and roster before assessing first-release fit.",
+      "limitSummary": "The first release excludes flexible working-hour systems, production and customer-specific processes.",
+      "detailsCta": "Expand fit requirements and limits"
     },
     "readiness": {
       "badge": "IT assessment and release preparation",
@@ -213,40 +215,42 @@
           "paid": "Adoption and maintenance are quoted per project. ESG scope depends on the output, data and work required."
         }
       ],
-      "note": "The open-source license and adoption service have separate scopes. Infrastructure and maintenance still have costs; pilot and service conditions require agreement."
+      "note": "The open-source license and adoption service have separate scopes. Infrastructure and maintenance still have costs; pilot and service conditions require agreement.",
+      "detailsCta": "Expand the full responsibility comparison"
     },
     "emailSubject": "Nexus ERP fit and adoption assessment",
-    "emailBody": "Workflow or modules to organize:\nWorking-hour arrangements and shifts:\nPunch source or export format:\nCurrent ERP, spreadsheets or opening data:\nIT and maintenance responsibilities:\nPreferred assessment timing, if any:\n"
+    "emailBody": "Company, contact person and contact details:\nOperational problem to address:\nWorking-hour arrangements and shifts (or to be confirmed):\nCurrent tools, punch source or format, if available:\nIT or maintenance contact (or to be confirmed):\nPreferred assessment timing (or to be confirmed):\n",
+    "startCta": "See how to start"
   },
   "esg": {
     "eyebrow": "NEXUS ESG · PAID PROJECT SERVICES",
-    "title": "Start with the ESG information your customer needs.",
-    "description": "Choose the outcome your customer needs: waste flow evidence, factory carbon inventory data, or product carbon footprint data. Asper organizes the data, checks sources and gaps, and delivers the agreed scope. Keep using your ERP, Excel files, and supporting records.",
-    "primaryCta": "Choose a customer outcome",
+    "title": "Need ESG data? Choose one outcome first.",
+    "description": "Keep your ERP, Excel files and records. We organize data and evidence within the agreed scope.",
+    "primaryCta": "Choose an ESG outcome",
     "contactCta": "Open an ESG enquiry draft",
     "entry": {
       "badge": "Start with your existing ERP",
-      "title": "Keep your ERP. Start with the data you have.",
-      "description": "Asper first reviews the requested deliverable and data gaps. Once the requirements are clear, we review an authorized export sample to assess import or integration options.",
+      "title": "Already have an ERP? Keep it.",
+      "description": "Review available data, then agree on import or integration.",
       "sourceLabel": "Data sources",
       "source": "ERP, Excel, documents, and records",
       "startLabel": "Starting scope",
       "start": "A defined period, site, or product",
       "deliveryLabel": "Paid project",
-      "delivery": "Scheduled after deliverables, scope, and pricing are agreed"
+      "delivery": "Agree on scope and pricing first"
     },
     "outcomes": {
       "eyebrow": "THREE PAID PROJECT OUTCOMES",
-      "title": "Start with what your customer asks you to deliver.",
-      "description": "Choose one outcome first. Asper assesses the project based on the recipient, deadline, and available data. You can start with a single project.",
-      "cardCta": "See deliverables and data needs"
+      "title": "What does your customer need?",
+      "description": "Choose one outcome. Assess the others later.",
+      "cardCta": "See scope and data needs"
     },
     "inputLabel": "After scope is agreed: data to review together",
     "outputLabel": "Paid project deliverables, within the agreed scope",
     "solutions": {
       "waste": {
         "title": "Waste and recycling flows",
-        "summary": "A flow register for the period, a list of missing records, and batch evidence packs checked by your factory.",
+        "summary": "Flow register, missing records and batch evidence packs.",
         "audience": "For factory operations, EHS, and ESG teams",
         "description": "Asper links the available weight, handover, and treatment records, flags missing evidence, and prepares the agreed period or batch deliverables.",
         "inputs": [
@@ -262,12 +266,12 @@
         ],
         "nextStep": "Tell us what your customer needs, the deadline, and the period or batches you want to cover. You can start the discussion with incomplete records.",
         "cta": "Draft a waste flow enquiry",
-        "request": "Explain where waste went and provide evidence of recycling.",
+        "request": "Your customer needs recovery destinations and evidence.",
         "scope": "Evidence packs use the records available and checked by your factory. Additional documents, certification, or verification require a separate scope and fee agreement."
       },
       "carbon": {
         "title": "Factory carbon inventory data preparation",
-        "summary": "An activity data register, source and emission factor version records, and working papers for the agreed inventory scope.",
+        "summary": "Activity data, factor records and inventory working papers.",
         "audience": "For ESG, finance, factory operations, and IT teams",
         "description": "Asper organizes activity data and supporting records for the agreed site, period, and emission sources. Both parties confirm the inventory boundary and emission factors before reviewing the working papers.",
         "inputs": [
@@ -283,12 +287,12 @@
         ],
         "nextStep": "Tell us the site, period, customer deadline, and available energy or consumption records. We can confirm the inventory boundary and emission factors together later.",
         "cta": "Draft an inventory enquiry",
-        "request": "Provide carbon inventory data for a factory and period.",
+        "request": "Your customer needs factory inventory data.",
         "scope": "Emission calculations, a formal inventory report, consultant involvement, and third-party verification are subject to a separate agreement on work, responsibilities, and fees."
       },
       "pcf": {
         "title": "Product carbon footprint data preparation (PCF)",
-        "summary": "A product data and gap list, material and allocation settings, and a calculation data and evidence pack.",
+        "summary": "Material, process and allocation data, plus an evidence pack.",
         "audience": "For sales, product, and ESG teams",
         "description": "Asper starts with one product pilot and reviews the customer requirements, materials, production volumes, and process records. Both parties confirm the product boundary and allocation basis before Asper prepares calculation data.",
         "inputs": [
@@ -304,7 +308,7 @@
         ],
         "nextStep": "Tell us the product, customer requirements, deadline, and available material or production records. We can confirm the product boundary and allocation method together later.",
         "cta": "Draft a product pilot enquiry",
-        "request": "Provide carbon footprint data for a selected product.",
+        "request": "Your customer needs one product’s carbon footprint data.",
         "scope": "Product emission calculations, a formal carbon footprint report, consultant involvement, and third-party verification are subject to a separate agreement on work, responsibilities, and fees."
       }
     },
@@ -329,7 +333,8 @@
           "title": "Deliver and maintain",
           "description": "Both parties confirm the deliverables and plan the next period's updates."
         }
-      ]
+      ],
+      "detailsCta": "See data preparation and the AI plan"
     },
     "agent": {
       "title": "AI Agents are planned for data organization and follow-up.",
@@ -338,13 +343,14 @@
     },
     "service": {
       "eyebrow": "DELIVERY SCOPE AND FEES",
-      "title": "Paid work starts with agreed deliverables and scope.",
-      "description": "The listed deliverables cover data preparation, working papers, and evidence packs. Asper reviews the outcome, data volume, and deadline. Work is scheduled after both parties agree on scope and pricing.",
+      "title": "Paid delivery of data, working papers and evidence.",
+      "description": "Agree on scope and pricing first.",
       "initialTitle": "Initial data preparation and delivery",
       "initialDescription": "Within the agreed scope, Asper organizes fields, imports data, preserves source references, and arranges human checks for the first period's deliverables. The connection method is agreed separately.",
       "ongoingTitle": "Ongoing data management and delivery",
       "ongoingDescription": "New periods, products, sources, and ongoing maintenance require an agreed scope and fees.",
-      "scopeNote": "Emission calculations, formal reports, consultant involvement, and third-party verification each require agreement on work, responsibilities, and fees."
+      "scopeNote": "Calculations, formal reports, consulting and verification require separate scope and fee agreements.",
+      "detailsCta": "Expand fees and delivery responsibilities"
     },
     "faqTitle": "Questions before you start.",
     "questions": [
@@ -374,58 +380,61 @@
       }
     ],
     "contact": {
-      "title": "Tell us what you need. Asper will help define the next step.",
-      "description": "The email draft has six enquiry fields. Mark undecided items as \"to be confirmed\". Asper staff will review your requirements and available data, then discuss the assessment, paid scope, and pricing.",
-      "note": "The button opens an email draft for you to review and send. Send a requirements summary first; export samples can be arranged later."
+      "title": "Share your needs with an Asper team member.",
+      "description": "The draft has six fields. Mark unknowns “to be confirmed”.",
+      "note": "You review and send the draft. Asper then reviews data, scope and pricing.",
+      "selectionLabel": "Current outcome",
+      "changeCta": "Change outcome"
     },
     "erp": {
-      "description": "Also need to organize daily HR and operations?",
-      "cta": "Explore the open-source ERP plan"
+      "description": "Want to organize daily operations first?",
+      "cta": "Assess ERP fit"
     },
     "startCta": "How to start with your ERP",
-    "heroNote": "You can start with incomplete data. Tell us the customer requirements, deadline, and data you have.",
+    "heroNote": "You can start with incomplete data.",
     "requestLabel": "Customer request",
     "summaryOutputLabel": "Paid deliverable",
-    "inputNote": "This data list applies after the project scope is agreed. For the first conversation, describe your requirements and available data. You can gather the remaining records later.",
+    "inputNote": "Use this list after project scope is agreed. Start with your needs.",
     "scopeLabel": "Scope to confirm separately",
-    "emailNote": "The button opens an email draft with your selected outcome and enquiry fields. Review it before sending.",
+    "emailNote": "The enquiry draft keeps this outcome. Review and send it yourself.",
     "emailSubject": "Nexus ESG enquiry: {{outcome}}",
     "emailBody": "Requested outcome: {{outcome}}\nCustomer requirements and recipient:\nPreferred delivery deadline:\nSite, period, or product:\nCurrent ERP, Excel files, documents, and types of data available for export:\nCompany, contact person, and contact details:\n",
     "undecidedOutcome": "Undecided; I'd like to discuss it",
     "start": {
-      "eyebrow": "FIRST CONTACT AND YOUR EXISTING ERP",
-      "title": "Start with the request, even if the data is incomplete.",
-      "description": "Send a requirements summary. Asper staff will confirm the request with your factory contact and arrange a data assessment.",
+      "eyebrow": "FIRST CONTACT",
+      "title": "Start even if your data is incomplete.",
+      "description": "Share these five details. An Asper team member follows up.",
       "initialTitle": "First contact: five things to share",
       "items": [
-        "The outcome your customer needs and who receives it; share what you know if undecided",
-        "Your preferred delivery deadline",
-        "The site, period, or product to cover",
-        "Your current ERP, Excel files, documents, and types of data available for export",
-        "Company, contact person, and contact details"
+        "Customer requirement and recipient",
+        "Delivery deadline (or to be confirmed)",
+        "Site, period or product",
+        "Current systems and data types",
+        "Company and contact person"
       ],
-      "note": "Emission factors, allocation methods, and complete registers can be confirmed later. Once requirements are clear, we arrange an authorized export sample.",
-      "processTitle": "Keep your ERP. Assess the data, then agree on a connection method.",
-      "processDescription": "Keep your existing system. Asper reviews export samples and data gaps, then assesses CSV or Excel import or API integration options and responsibilities.",
+      "note": "Confirm factors, boundaries and allocation methods later.",
+      "processTitle": "How to start with an existing ERP",
+      "processDescription": "Keep your system. Assess import or API options first.",
       "steps": [
         {
           "title": "Your factory explains the request and deadline",
-          "description": "Share the recipient, site or product, current system, and available data types."
+          "description": "List current tools and data types."
         },
         {
           "title": "Your factory provides an authorized sample",
-          "description": "Once requirements are clear, your contact provides an authorized export sample so Asper can check fields and periods."
+          "description": "Provide an authorized sample once requirements are clear."
         },
         {
           "title": "Asper reviews available data",
-          "description": "Asper lists usable fields, missing records, and items to check, then agrees on who will fill each gap with your contact."
+          "description": "Asper checks fields and missing records."
         },
         {
           "title": "Both parties agree on scope and pricing",
-          "description": "Agree on the import or integration method, deliverables, responsibilities, and fees before scheduling the project."
+          "description": "Both parties agree on connections, responsibilities and pricing."
         }
       ],
-      "cta": "Share your ESG requirements"
-    }
+      "cta": "See how to fill in your enquiry"
+    },
+    "prepareCta": "See how to fill in your enquiry"
   }
 }
