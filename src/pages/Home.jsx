@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Database, Leaf } from 'lucide-react';
 import Reveal from '../components/home/Reveal';
-import HeroScan from '../components/home/HeroScan';
+import VideoHero from '../components/VideoHero';
 import ScanRow from '../components/home/ScanRow';
 import FlowPipeline from '../components/home/FlowPipeline';
 import IncinerationGrid from '../components/home/IncinerationGrid';
@@ -12,24 +12,36 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero: one sentence, one button, and a drawn phone that judges one item at a time */}
-      <section className="home-hero">
-        <div className="container home-hero-inner">
-          <div className="home-hero-copy">
-            <div className="tag" style={{ marginBottom: 28 }}>{t('home.tag')}</div>
+      {/* Hero with Video Background (kept from the previous site, per Jasper 2026-10-23) */}
+      <VideoHero>
+        <div className="container">
+          <div style={{ maxWidth: 800 }}>
+            <div className="tag" style={{ marginBottom: 24 }}>{t('home.tag')}</div>
             {/* keep-all: CJK headline breaks only at the zero-width space in the string */}
-            <h1 className="home-h1">
-              <span>{t('hero.headline')}</span><br />
-              <span className="home-h1-accent">{t('hero.headline2')}</span>
+            <h1 style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1,
+              marginBottom: 24, fontWeight: 700,
+              wordBreak: 'keep-all', overflowWrap: 'anywhere',
+            }}>
+              <span style={{ color: '#fff' }}>{t('hero.headline')}</span><br />
+              <span style={{
+                background: 'linear-gradient(135deg, #4285F4, #34A853)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+              }}>{t('hero.headline2')}</span>
             </h1>
-            <p className="home-hero-sub">{t('hero.subtext')}</p>
-            <Link to="/partners" className="btn-primary">
-              {t('hero.cta')} <ArrowRight size={16} />
-            </Link>
+            <p style={{
+              fontSize: '1.15rem', color: 'rgba(255,255,255,0.75)', maxWidth: 600,
+              marginBottom: 40, lineHeight: 1.8,
+            }}>{t('hero.subtext')}</p>
+            <div className="hero-buttons" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+              <Link to="/partners" className="btn-primary">
+                {t('hero.cta')} <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
-          <HeroScan />
         </div>
-      </section>
+      </VideoHero>
 
       {/* 01 Niche: which bin vs. can it become feedstock */}
       <section className="home-block">
