@@ -1,4 +1,10 @@
 {
+  "redirects": [
+    { "source": "/nexus(/.*)?", "destination": "/", "statusCode": 301 },
+    { "source": "/supply-chain(/.*)?", "destination": "/", "statusCode": 301 },
+    { "source": "/metal-recovery(/.*)?", "destination": "/", "statusCode": 301 },
+    { "source": "/ai-vision(/.*)?", "destination": "/", "statusCode": 301 }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
