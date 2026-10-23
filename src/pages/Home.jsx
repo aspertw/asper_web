@@ -55,7 +55,6 @@ const Home = () => {
           <Reveal delay={150}><MaterialSorter /></Reveal>
           <Reveal>
             <p className="home-summary">{t('home.niche.summary')}</p>
-            <p className="home-footnote">{t('home.niche.rule')}</p>
           </Reveal>
         </div>
       </section>
@@ -65,22 +64,19 @@ const Home = () => {
         <div className="container">
           <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.why.tag')}</div></Reveal>
           <Reveal>
-            <h2 className="section-title">{t('home.why.title')}</h2>
-            <p className="home-lead">{t('home.why.lead')}</p>
+            <h2 className="section-title" style={{ marginBottom: 32 }}>{t('home.why.title')}</h2>
           </Reveal>
           <ValueChainFlow />
-          <div className="badges">
-            {['award', 'patent1', 'patent2'].map((id, i) => (
-              <Reveal key={id} delay={i * 120} className="badge">
-                <span className="badge-kind">{t(`home.badges.${id}.kind`)}</span>
-                <span className="badge-text">{t(`home.badges.${id}.text`)}</span>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal>
+            <div className="badge">
+              <span className="badge-kind">{t('home.why.patentsKind')}</span>
+              <span className="badge-text">I933135、I906713</span>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Vision: the one sourced number, shown as a dot grid, then the path and milestones */}
+      {/* Vision: the one sourced number, shown as a dot grid */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.vision.tag')}</div></Reveal>
@@ -92,29 +88,6 @@ const Home = () => {
                 target="_blank" rel="noopener noreferrer">{t('home.vision.source')}</a>
             </Reveal>
             <Reveal delay={150}><IncinerationGrid /></Reveal>
-          </div>
-
-          <Reveal>
-            <div className="path">
-              <span className="path-label">{t('home.vision.pathLabel')}</span>
-              {['path1', 'path2', 'path3'].map((id, i) => (
-                <span key={id} className="path-step">
-                  {i > 0 && <ArrowRight size={14} className="path-arrow" />}
-                  <span className="path-chip">{t(`home.vision.${id}`)}</span>
-                </span>
-              ))}
-            </div>
-          </Reveal>
-
-          <Reveal><h3 className="timeline-title">{t('home.ms.title')}</h3></Reveal>
-          <div className="timeline">
-            {['ms1', 'ms2', 'ms3'].map((id, i) => (
-              <Reveal key={id} delay={i * 150} className="timeline-item">
-                <span className="timeline-dot" />
-                <span className="timeline-when">{t(`home.ms.${id}.when`)}</span>
-                <span className="timeline-desc">{t(`home.ms.${id}.desc`)}</span>
-              </Reveal>
-            ))}
           </div>
         </div>
       </section>

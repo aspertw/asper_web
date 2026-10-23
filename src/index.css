@@ -335,7 +335,6 @@ a:hover {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
-.home-lead { font-size: 1.05rem; color: #94A3B8; margin-bottom: 40px; }
 .home-summary {
   font-size: 1.15rem; color: #fff; margin-top: 32px;
   word-break: keep-all; overflow-wrap: anywhere;
@@ -411,9 +410,8 @@ a:hover {
   80% { opacity: 1; }
   100% { left: calc(100% - 8px); opacity: 0; }
 }
-.badges { display: flex; flex-wrap: wrap; gap: 12px; }
 .badge {
-  display: flex; flex-direction: column; gap: 4px; max-width: 420px;
+  display: inline-flex; flex-direction: column; gap: 4px; max-width: 420px;
   padding: 12px 16px; border-radius: 10px; border: 1px solid var(--card-border); background: #0a0a0a;
 }
 .badge-kind { font-family: var(--font-mono); font-size: 0.7rem; color: #34A853; letter-spacing: 0.05em; }
@@ -438,19 +436,6 @@ a:hover {
   background: transparent; color: #94A3B8; font-size: 0.8rem; cursor: pointer;
 }
 
-/* Path and milestones */
-.path { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 48px; }
-.path-label { font-family: var(--font-mono); font-size: 0.75rem; color: #64748B; margin-right: 6px; }
-.path-step { display: inline-flex; align-items: center; gap: 10px; }
-.path-arrow { color: #34A853; }
-.path-chip { padding: 8px 14px; border-radius: 100px; border: 1px solid #1f2937; color: #cbd5e1; font-size: 0.9rem; }
-.timeline-title { font-size: 1.1rem; color: #fff; margin-bottom: 16px; }
-.timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; border-top: 2px solid #1f2937; padding-top: 20px; position: relative; }
-.timeline-item { position: relative; display: flex; flex-direction: column; gap: 6px; }
-.timeline-dot { position: absolute; top: -27px; left: 0; width: 12px; height: 12px; border-radius: 50%; background: #4285F4; box-shadow: 0 0 0 4px rgba(66,133,244,0.15); }
-.timeline-when { font-family: var(--font-mono); color: #4285F4; }
-.timeline-desc { font-size: 0.9rem; color: #94A3B8; line-height: 1.6; }
-
 @media (max-width: 768px) {
   .sorter { grid-template-columns: 1fr; }
   .sorter-panel { min-height: 200px; padding: 24px; }
@@ -462,8 +447,6 @@ a:hover {
   .flow-on .flow-dot { animation-name: flowDotY; }
   .vision { grid-template-columns: 1fr; gap: 32px; }
   .burn-grid { max-width: 280px; }
-  .timeline { grid-template-columns: 1fr; border-top: none; border-left: 2px solid #1f2937; padding: 0 0 0 20px; }
-  .timeline-dot { top: 6px; left: -27px; }
 }
 @keyframes flowDotY {
   0% { top: 0; opacity: 0; }

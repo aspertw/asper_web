@@ -13,12 +13,9 @@ const ITEMS = [
   { id: 'bag', code: 4, material: 'LDPE', verdict: 'accept', reason: 'reasonAccept' },
   { id: 'bento', code: 5, material: 'PP', verdict: 'accept', reason: 'reasonAccept' },
   { id: 'foam', code: 6, material: 'PS', verdict: 'accept', reason: 'reasonAccept' },
-  { id: 'shampoo', code: 2, material: 'HDPE', verdict: 'accept', reason: 'reasonAccept' },
-  { id: 'pipe', code: 3, material: 'PVC', verdict: 'stop', reason: 'reasonPVC' },
-  { id: 'case', code: 7, material: 'ABS', verdict: 'accept', reason: 'reasonAccept' },
-  { id: 'chips', code: null, material: 'MLP', verdict: 'stop', reason: 'reasonMLP' },
-  { id: 'slipper', code: 7, material: 'EVA', verdict: 'accept', reason: 'reasonAccept' },
   { id: 'bottle', code: 1, material: 'PET', verdict: 'redirect', reason: 'reasonPET' },
+  { id: 'pipe', code: 3, material: 'PVC', verdict: 'stop', reason: 'reasonPVC' },
+  { id: 'carton', code: null, material: null, verdict: 'stop', reason: 'reasonFoil' },
 ];
 
 const STEP_MS = 1800;
@@ -82,7 +79,7 @@ const MaterialSorter = () => {
             >
               <ResinMark code={it.code} color={color} />
               <span className="sorter-chip-name">{t(`home.sorter.items.${it.id}`)}</span>
-              <span className="sorter-chip-mat">{it.material}</span>
+              <span className="sorter-chip-mat">{it.material ?? '\u00a0'}</span>
             </button>
           );
         })}
@@ -93,7 +90,7 @@ const MaterialSorter = () => {
         <div key={selected} className="sorter-verdict">
           <div className="sorter-verdict-word" style={{ color: v.color }}>{t(`home.sorter.${item.verdict}`)}</div>
           <div className="sorter-verdict-item">
-            {t(`home.sorter.items.${item.id}`)} · {item.material}
+            {t(`home.sorter.items.${item.id}`)}{item.material ? ` · ${item.material}` : ''}
           </div>
           <div className="sorter-verdict-reason">{t(`home.sorter.${item.reason}`)}</div>
         </div>

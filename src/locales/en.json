@@ -16,8 +16,7 @@
       "tag": "Our niche",
       "q1": "A sorting facility asks: which bin?",
       "q2": "Asper asks: can this become feedstock again?",
-      "summary": "Apart from PVC, MLP and PET, most plastics can be accepted.",
-      "rule": "The rules follow the feedstock specification of our affiliate's pyrolysis plant."
+      "summary": "Apart from PVC, PET and aluminium-lined packaging, most plastics can be accepted."
     },
     "sorter": {
       "panelLabel": "Judgment rule",
@@ -27,59 +26,39 @@
       "redirect": "Redirect",
       "reasonAccept": "Goes into pyrolysis and becomes recycled feedstock.",
       "reasonPVC": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
-      "reasonMLP": "Multilayer packaging with an aluminium coating. It does not go into pyrolysis.",
       "reasonPET": "Goes back to PET bottle recycling.",
+      "reasonFoil": "A carton lined with aluminium foil. It does not go into pyrolysis.",
       "items": {
         "bag": "Plastic bag",
         "bento": "Lunch box",
         "foam": "Foam tray",
-        "shampoo": "Shampoo bottle",
         "pipe": "Water pipe",
-        "case": "Device casing",
-        "chips": "Chip bag",
-        "slipper": "Slippers",
-        "bottle": "Drink bottle"
+        "bottle": "Drink bottle",
+        "carton": "Drink carton"
       }
     },
     "why": {
       "tag": "Why Asper",
       "title": "Backed by a working chemical recycling plant",
-      "lead": "Each judgment upstream matches what the plant downstream can take."
+      "patentsKind": "Invention patents"
     },
     "flow": {
       "up": {
         "label": "Upstream",
-        "title": "A semiconductor maker's site",
-        "note": "Household-type plastic; the project expects 43.2 t a year"
+        "title": "Corporate site"
       },
       "asper": {
         "label": "Asper",
-        "title": "Judgment at the source",
-        "note": "A photo decides: accept, stop or redirect"
+        "title": "Judgment at the source"
       },
       "down": {
         "label": "Downstream",
         "title": "Our affiliate's plant",
-        "note": "Pyrolysis in Dayuan, Taoyuan · ISCC PLUS certified"
+        "note": "Pyrolysis plant · ISCC PLUS certified"
       },
       "out": {
         "label": "Output",
-        "title": "Recycled feedstock",
-        "note": "Every judgment keeps a photo and a timestamp"
-      }
-    },
-    "badges": {
-      "award": {
-        "kind": "Award",
-        "text": "Our affiliate won the circular-regeneration category of a semiconductor maker's supplier sustainability awards for AI sorting + chemical recycling"
-      },
-      "patent1": {
-        "kind": "Invention patent",
-        "text": "I933135 Plastic product identification and sorting"
-      },
-      "patent2": {
-        "kind": "Invention patent",
-        "text": "I906713 Liquid-phase pyrolysis of recycled composites"
+        "title": "Recycled feedstock"
       }
     },
     "vision": {
@@ -88,26 +67,7 @@
       "source": "Source: 黃梓恩 (2023), master's thesis, National Taiwan University (in Chinese)",
       "line1": "About half of the plastic waste Taiwan collects ends up in incinerators.",
       "line2": "We want the household plastic in that half to have a chance to become recycled feedstock again.",
-      "replay": "Replay",
-      "pathLabel": "The path ahead",
-      "path1": "Corporate sites",
-      "path2": "Communities, schools and cities",
-      "path3": "Other chemical recyclers"
-    },
-    "ms": {
-      "title": "Where we are now",
-      "ms1": {
-        "when": "2026.11",
-        "desc": "Train the baseline of our own model on the Ministry of Digital Affairs' compute platform (applied)"
-      },
-      "ms2": {
-        "when": "2026.12",
-        "desc": "Recognition service scheduled to go live at the first corporate site"
-      },
-      "ms3": {
-        "when": "Next",
-        "desc": "Expand the materials we recognize"
-      }
+      "replay": "Replay"
     },
     "alsoTitle": "Beyond recognition",
     "erpTitle": "ERP and CRM",

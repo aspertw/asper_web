@@ -5,7 +5,7 @@ import { useInView } from './motion';
 const NODES = [
   { id: 'up', color: '#94A3B8' },
   { id: 'asper', color: '#4285F4' },
-  { id: 'down', color: '#34A853' },
+  { id: 'down', color: '#34A853', note: true },
   { id: 'out', color: '#34A853' },
 ];
 
@@ -24,7 +24,7 @@ const ValueChainFlow = () => {
           <div className="flow-node" style={{ '--node-color': node.color }}>
             <div className="flow-node-label">{t(`home.flow.${node.id}.label`)}</div>
             <div className="flow-node-title">{t(`home.flow.${node.id}.title`)}</div>
-            <div className="flow-node-note">{t(`home.flow.${node.id}.note`)}</div>
+            {node.note && <div className="flow-node-note">{t(`home.flow.${node.id}.note`)}</div>}
           </div>
         </div>
       ))}
