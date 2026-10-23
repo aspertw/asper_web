@@ -2,6 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import VideoHero from '../components/VideoHero';
+import Reveal from '../components/home/Reveal';
+import MaterialSorter from '../components/home/MaterialSorter';
+import ValueChainFlow from '../components/home/ValueChainFlow';
+import IncinerationGrid from '../components/home/IncinerationGrid';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -41,125 +45,75 @@ const Home = () => {
       {/* Niche: judge for pyrolysis feedstock, not for sorting bins */}
       <section className="section">
         <div className="container">
-          <div className="tag" style={{ marginBottom: 24 }}>{t('home.nicheTag')}</div>
-          <p style={{
-            fontFamily: 'var(--font-mono)', fontSize: 'clamp(1.4rem, 3vw, 2.2rem)',
-            lineHeight: 1.4, fontWeight: 600, marginBottom: 24, maxWidth: 900,
-            wordBreak: 'keep-all', overflowWrap: 'anywhere',
-          }}>
-            <span style={{ color: '#64748B' }}>{t('home.nicheLine1')}</span><br />
-            <span style={{ color: '#fff' }}>{t('home.nicheLine2')}</span>
-          </p>
-          <p style={{ fontSize: '1rem', color: '#94A3B8', lineHeight: 1.8, maxWidth: 720, marginBottom: 40 }}>
-            {t('home.nicheDesc')}
-          </p>
-          <div style={{ borderTop: '1px solid #1a1a1a', marginBottom: 24 }}>
-            {[
-              { num: '/01', label: t('home.ruleAcceptLabel'), mat: t('home.ruleAcceptMat'), desc: t('home.ruleAcceptDesc'), color: '#34A853' },
-              { num: '/02', label: t('home.ruleStopLabel'), mat: 'PVC', desc: t('home.ruleStopDesc'), color: '#EA4335' },
-              { num: '/03', label: t('home.ruleRouteLabel'), mat: 'PET', desc: t('home.ruleRouteDesc'), color: '#FBBC05' },
-            ].map(rule => (
-              <div key={rule.num} style={{
-                display: 'flex', alignItems: 'baseline', gap: 16, flexWrap: 'wrap',
-                padding: '20px 0', borderBottom: '1px solid #1a1a1a',
-              }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#64748B' }}>{rule.num}</span>
-                <span style={{
-                  fontFamily: 'var(--font-mono)', fontSize: '1.3rem', fontWeight: 600,
-                  color: rule.color, minWidth: 72,
-                }}>{rule.label}</span>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '1.1rem', color: '#fff', minWidth: 140 }}>
-                  {rule.mat}
-                </span>
-                <span style={{ fontSize: '0.95rem', color: '#94A3B8', flex: '1 1 260px' }}>{rule.desc}</span>
-              </div>
-            ))}
-          </div>
-          <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.8, maxWidth: 720 }}>
-            {t('home.ruleNote')}
-          </p>
+          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.niche.tag')}</div></Reveal>
+          <Reveal>
+            <h2 className="home-statement">
+              <span style={{ color: '#64748B' }}>{t('home.niche.q1')}</span><br />
+              <span style={{ color: '#fff' }}>{t('home.niche.q2')}</span>
+            </h2>
+          </Reveal>
+          <Reveal delay={150}><MaterialSorter /></Reveal>
+          <Reveal>
+            <p className="home-summary">{t('home.niche.summary')}</p>
+            <p className="home-footnote">{t('home.niche.rule')}</p>
+          </Reveal>
         </div>
       </section>
 
-      {/* Why Asper: named, sourced evidence only */}
+      {/* Why Asper: upstream site → judgment → affiliate's plant → feedstock */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="tag" style={{ marginBottom: 24 }}>{t('home.whyTag')}</div>
-          <h2 className="section-title">{t('home.whyTitle')}</h2>
-          <p style={{ fontSize: '1rem', color: '#94A3B8', lineHeight: 1.8, maxWidth: 720, marginBottom: 32 }}>
-            {t('home.whyDesc')}
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20, maxWidth: 820 }}>
-            {[
-              { label: t('home.whyDownLabel'), desc: t('home.whyDownDesc') },
-              {
-                label: t('home.whyUpLabel'), desc: t('home.whyUpDesc'),
-                source: {
-                  href: 'https://www.aseglobal.com/ch/pdf/2025-aseh-csr-responsible-procurement-ch.pdf',
-                  text: t('home.whyUpSource'),
-                },
-              },
-              { label: t('home.whyPatentLabel'), desc: t('home.whyPatentDesc') },
-            ].map(item => (
-              <div key={item.label} style={{ display: 'flex', gap: 16 }}>
-                <span style={{ fontFamily: 'var(--font-mono)', color: '#34A853', flexShrink: 0 }}>↳</span>
-                <div>
-                  <span style={{ fontFamily: 'var(--font-mono)', color: '#fff', fontWeight: 600, marginRight: 12 }}>
-                    {item.label}
-                  </span>
-                  <span style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.8 }}>{item.desc}</span>
-                  {item.source && (
-                    <a href={item.source.href} target="_blank" rel="noopener noreferrer" style={{
-                      display: 'block', fontSize: '0.8rem', color: '#64748B', marginTop: 4,
-                    }}>{item.source.text}</a>
-                  )}
-                </div>
-              </div>
+          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.why.tag')}</div></Reveal>
+          <Reveal>
+            <h2 className="section-title">{t('home.why.title')}</h2>
+            <p className="home-lead">{t('home.why.lead')}</p>
+          </Reveal>
+          <ValueChainFlow />
+          <div className="badges">
+            {['award', 'patent1', 'patent2'].map((id, i) => (
+              <Reveal key={id} delay={i * 120} className="badge">
+                <span className="badge-kind">{t(`home.badges.${id}.kind`)}</span>
+                <span className="badge-text">{t(`home.badges.${id}.text`)}</span>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Vision and where we are now; the one number is sourced */}
+      {/* Vision: the one sourced number, shown as a dot grid, then the path and milestones */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="tag" style={{ marginBottom: 24 }}>{t('home.visionTag')}</div>
-          <div className="grid-2" style={{ alignItems: 'start', gap: 48 }}>
-            <div>
+          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.vision.tag')}</div></Reveal>
+          <div className="vision">
+            <Reveal>
               <div className="metric-value" style={{ fontSize: 'clamp(3rem, 7vw, 5rem)', lineHeight: 1 }}>50.11%</div>
-              <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.7, marginTop: 12 }}>
-                {t('home.visionStatCaption')}
-              </p>
-              <a href="https://tdr.lib.ntu.edu.tw/handle/123456789/88379" target="_blank" rel="noopener noreferrer" style={{
-                display: 'inline-block', fontSize: '0.8rem', color: '#64748B', marginTop: 4,
-              }}>{t('home.visionSource')}</a>
-            </div>
-            <div>
-              <p style={{
-                fontSize: '1.25rem', color: '#fff', lineHeight: 1.7, marginBottom: 16,
-                wordBreak: 'keep-all', overflowWrap: 'anywhere',
-              }}>
-                {t('home.visionLine1')}<br />{t('home.visionLine2')}
-              </p>
-              <p style={{ fontSize: '1rem', color: '#94A3B8', lineHeight: 1.8 }}>{t('home.visionPath')}</p>
-            </div>
+              <p className="home-footnote" style={{ marginTop: 12 }}>{t('home.vision.statCaption')}</p>
+              <a className="home-source" href="https://tdr.lib.ntu.edu.tw/handle/123456789/88379"
+                target="_blank" rel="noopener noreferrer">{t('home.vision.source')}</a>
+            </Reveal>
+            <Reveal delay={150}><IncinerationGrid /></Reveal>
           </div>
 
-          <h3 style={{ fontSize: '1.1rem', color: '#fff', margin: '56px 0 8px' }}>{t('home.milestonesTitle')}</h3>
-          <div style={{ borderTop: '1px solid #1a1a1a' }}>
-            {[
-              { when: t('home.ms1When'), desc: t('home.ms1Desc') },
-              { when: t('home.ms2When'), desc: t('home.ms2Desc') },
-              { when: t('home.ms3When'), desc: t('home.ms3Desc') },
-            ].map(ms => (
-              <div key={ms.when} style={{
-                display: 'flex', gap: 16, flexWrap: 'wrap', padding: '16px 0', borderBottom: '1px solid #1a1a1a',
-              }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', color: '#4285F4', minWidth: 160 }}>
-                  {ms.when}
+          <Reveal>
+            <div className="path">
+              <span className="path-label">{t('home.vision.pathLabel')}</span>
+              {['path1', 'path2', 'path3'].map((id, i) => (
+                <span key={id} className="path-step">
+                  {i > 0 && <ArrowRight size={14} className="path-arrow" />}
+                  <span className="path-chip">{t(`home.vision.${id}`)}</span>
                 </span>
-                <span style={{ fontSize: '0.95rem', color: '#94A3B8', flex: '1 1 260px' }}>{ms.desc}</span>
-              </div>
+              ))}
+            </div>
+          </Reveal>
+
+          <Reveal><h3 className="timeline-title">{t('home.ms.title')}</h3></Reveal>
+          <div className="timeline">
+            {['ms1', 'ms2', 'ms3'].map((id, i) => (
+              <Reveal key={id} delay={i * 150} className="timeline-item">
+                <span className="timeline-dot" />
+                <span className="timeline-when">{t(`home.ms.${id}.when`)}</span>
+                <span className="timeline-desc">{t(`home.ms.${id}.desc`)}</span>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -168,13 +122,13 @@ const Home = () => {
       {/* Other work: running systems, and ESG data as a planned next step */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <h2 className="section-title" style={{ marginBottom: 40 }}>{t('home.alsoTitle')}</h2>
+          <Reveal><h2 className="section-title" style={{ marginBottom: 40 }}>{t('home.alsoTitle')}</h2></Reveal>
           <div className="grid-2" style={{ marginBottom: 40 }}>
             {[
               { num: '/01', title: t('home.erpTitle'), desc: t('home.erpDesc') },
               { num: '/02', title: t('home.esgTitle'), desc: t('home.esgDesc'), status: t('home.esgStatus') },
-            ].map(item => (
-              <div key={item.num} className="card">
+            ].map((item, i) => (
+              <Reveal key={item.num} delay={i * 150} className="card">
                 <div style={{
                   display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 12,
                 }}>
@@ -190,7 +144,7 @@ const Home = () => {
                   )}
                 </div>
                 <p style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.8 }}>{item.desc}</p>
-              </div>
+              </Reveal>
             ))}
           </div>
           <Link to="/partners" className="btn-primary">

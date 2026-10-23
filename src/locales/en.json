@@ -12,41 +12,103 @@
   },
   "home": {
     "tag": "Household plastic recognition × chemical recycling",
-    "nicheTag": "Our niche",
-    "nicheLine1": "A sorting facility asks: which bin does this piece go in?",
-    "nicheLine2": "Asper asks: can this piece become recycled feedstock?",
-    "nicheDesc": "Mechanical recycling needs clean, single-material plastic, so mixed and dirty household plastic is mostly incinerated or landfilled. Pyrolysis can take this plastic, but the material it cannot take must be stopped first.",
-    "ruleAcceptLabel": "Accept",
-    "ruleAcceptMat": "PE, PP, PS",
-    "ruleAcceptDesc": "Goes into pyrolysis and becomes recycled feedstock.",
-    "ruleStopLabel": "Stop",
-    "ruleStopDesc": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
-    "ruleRouteLabel": "Redirect",
-    "ruleRouteDesc": "Goes back to PET bottle recycling.",
-    "ruleNote": "The accept and stop rules follow the feedstock specification of our affiliate's pyrolysis plant. Every judgment keeps a photo and a timestamp, so it becomes a verifiable waste-reduction record.",
-    "whyTag": "Why Asper",
-    "whyTitle": "Backed by a working chemical recycling plant",
-    "whyDesc": "Asper's recognition is backed by a chemical recycling plant in operation, so each judgment upstream matches what the plant downstream can take.",
-    "whyDownLabel": "Downstream",
-    "whyDownDesc": "Our affiliate runs a chemical recycling pyrolysis plant in Dayuan, Taoyuan, and holds ISCC PLUS certification.",
-    "whyUpLabel": "Upstream",
-    "whyUpDesc": "For 'AI sorting + chemical recycling', our affiliate won the circular-regeneration category of ASE Holdings' 3rd Supplier Sustainability Awards. The project expects to recover 43.2 tonnes of household-type plastic a year.",
-    "whyUpSource": "Source: ASE Holdings 2025 Sustainability Report, Responsible Procurement (in Chinese)",
-    "whyPatentLabel": "Patents",
-    "whyPatentDesc": "Taiwan invention patents I933135 (plastic product identification and sorting) and I906713 (liquid-phase pyrolysis of recycled composites).",
-    "visionTag": "Where we are going",
-    "visionStatCaption": "Share of the 1,909,496 tonnes of plastic waste collected in Taiwan in 2021 that went to incineration (research estimate, includes non-commodity plastics).",
-    "visionSource": "Source: 黃梓恩 (2023), master's thesis, National Taiwan University (in Chinese)",
-    "visionLine1": "About half of the plastic waste Taiwan collects ends up in incinerators.",
-    "visionLine2": "We want the household plastic in that half to have a chance to become recycled feedstock again.",
-    "visionPath": "We start with corporate sites, then communities, schools and city governments, and finally offer the same judgment to other chemical recyclers.",
-    "milestonesTitle": "Where we are now",
-    "ms1When": "From Nov 2026",
-    "ms1Desc": "We have applied for the Ministry of Digital Affairs' compute platform to train the baseline version of our own model.",
-    "ms2When": "Dec 2026",
-    "ms2Desc": "The recognition service is scheduled to go live at its first corporate site.",
-    "ms3When": "Next",
-    "ms3Desc": "Expand the range of materials we can recognize.",
+    "niche": {
+      "tag": "Our niche",
+      "q1": "A sorting facility asks: which bin?",
+      "q2": "Asper asks: can this become feedstock again?",
+      "summary": "Apart from PVC, MLP and PET, most plastics can be accepted.",
+      "rule": "The rules follow the feedstock specification of our affiliate's pyrolysis plant."
+    },
+    "sorter": {
+      "panelLabel": "Judgment rule",
+      "hint": "Tap an item",
+      "accept": "Accept",
+      "stop": "Stop",
+      "redirect": "Redirect",
+      "reasonAccept": "Goes into pyrolysis and becomes recycled feedstock.",
+      "reasonPVC": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
+      "reasonMLP": "Multilayer packaging with an aluminium coating. It does not go into pyrolysis.",
+      "reasonPET": "Goes back to PET bottle recycling.",
+      "items": {
+        "bag": "Plastic bag",
+        "bento": "Lunch box",
+        "foam": "Foam tray",
+        "shampoo": "Shampoo bottle",
+        "pipe": "Water pipe",
+        "case": "Device casing",
+        "chips": "Chip bag",
+        "slipper": "Slippers",
+        "bottle": "Drink bottle"
+      }
+    },
+    "why": {
+      "tag": "Why Asper",
+      "title": "Backed by a working chemical recycling plant",
+      "lead": "Each judgment upstream matches what the plant downstream can take."
+    },
+    "flow": {
+      "up": {
+        "label": "Upstream",
+        "title": "A semiconductor maker's site",
+        "note": "Household-type plastic; the project expects 43.2 t a year"
+      },
+      "asper": {
+        "label": "Asper",
+        "title": "Judgment at the source",
+        "note": "A photo decides: accept, stop or redirect"
+      },
+      "down": {
+        "label": "Downstream",
+        "title": "Our affiliate's plant",
+        "note": "Pyrolysis in Dayuan, Taoyuan · ISCC PLUS certified"
+      },
+      "out": {
+        "label": "Output",
+        "title": "Recycled feedstock",
+        "note": "Every judgment keeps a photo and a timestamp"
+      }
+    },
+    "badges": {
+      "award": {
+        "kind": "Award",
+        "text": "Our affiliate won the circular-regeneration category of a semiconductor maker's supplier sustainability awards for AI sorting + chemical recycling"
+      },
+      "patent1": {
+        "kind": "Invention patent",
+        "text": "I933135 Plastic product identification and sorting"
+      },
+      "patent2": {
+        "kind": "Invention patent",
+        "text": "I906713 Liquid-phase pyrolysis of recycled composites"
+      }
+    },
+    "vision": {
+      "tag": "Where we are going",
+      "statCaption": "Share of the 1,909,496 tonnes of plastic waste collected in Taiwan in 2021 that went to incineration (research estimate, includes non-commodity plastics).",
+      "source": "Source: 黃梓恩 (2023), master's thesis, National Taiwan University (in Chinese)",
+      "line1": "About half of the plastic waste Taiwan collects ends up in incinerators.",
+      "line2": "We want the household plastic in that half to have a chance to become recycled feedstock again.",
+      "replay": "Replay",
+      "pathLabel": "The path ahead",
+      "path1": "Corporate sites",
+      "path2": "Communities, schools and cities",
+      "path3": "Other chemical recyclers"
+    },
+    "ms": {
+      "title": "Where we are now",
+      "ms1": {
+        "when": "2026.11",
+        "desc": "Train the baseline of our own model on the Ministry of Digital Affairs' compute platform (applied)"
+      },
+      "ms2": {
+        "when": "2026.12",
+        "desc": "Recognition service scheduled to go live at the first corporate site"
+      },
+      "ms3": {
+        "when": "Next",
+        "desc": "Expand the materials we recognize"
+      }
+    },
     "alsoTitle": "Beyond recognition",
     "erpTitle": "ERP and CRM",
     "erpDesc": "Asper builds and runs ERP and CRM systems for factories. At our affiliate's pyrolysis plant, employees use them every day: the ERP for attendance, scheduling, and payroll, and the CRM for customers and sample orders.",
