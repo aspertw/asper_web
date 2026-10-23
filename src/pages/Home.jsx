@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import VideoHero from '../components/VideoHero';
 import Reveal from '../components/home/Reveal';
-import MaterialSorter from '../components/home/MaterialSorter';
-import ValueChainFlow from '../components/home/ValueChainFlow';
 import IncinerationGrid from '../components/home/IncinerationGrid';
 
 const Home = () => {
@@ -42,42 +40,8 @@ const Home = () => {
         </div>
       </VideoHero>
 
-      {/* Niche: judge for pyrolysis feedstock, not for sorting bins */}
-      <section className="section">
-        <div className="container">
-          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.niche.tag')}</div></Reveal>
-          <Reveal>
-            <h2 className="home-statement">
-              <span style={{ color: '#64748B' }}>{t('home.niche.q1')}</span><br />
-              <span style={{ color: '#fff' }}>{t('home.niche.q2')}</span>
-            </h2>
-          </Reveal>
-          <Reveal delay={150}><MaterialSorter /></Reveal>
-          <Reveal>
-            <p className="home-summary">{t('home.niche.summary')}</p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Why Asper: upstream site → judgment → affiliate's plant → feedstock */}
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.why.tag')}</div></Reveal>
-          <Reveal>
-            <h2 className="section-title" style={{ marginBottom: 32 }}>{t('home.why.title')}</h2>
-          </Reveal>
-          <ValueChainFlow />
-          <Reveal>
-            <div className="badge">
-              <span className="badge-kind">{t('home.why.patentsKind')}</span>
-              <span className="badge-text">I933135、I906713</span>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Vision: the one sourced number, shown as a dot grid */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section home-block">
         <div className="container">
           <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.vision.tag')}</div></Reveal>
           <div className="vision">
@@ -93,7 +57,7 @@ const Home = () => {
       </section>
 
       {/* Other work: running systems, and ESG data as a planned next step */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section home-block">
         <div className="container">
           <Reveal><h2 className="section-title" style={{ marginBottom: 40 }}>{t('home.alsoTitle')}</h2></Reveal>
           <div className="grid-2" style={{ marginBottom: 40 }}>

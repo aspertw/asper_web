@@ -12,55 +12,6 @@
   },
   "home": {
     "tag": "生活廢塑膠辨識 × 化學回收",
-    "niche": {
-      "tag": "我們的利基",
-      "q1": "回收場問：這一件分到哪一桶？",
-      "q2": "捷寶問：這一件能不能變回原料？",
-      "summary": "PVC、PET 和含鋁箔的包材之外，塑膠大多可以收。"
-    },
-    "sorter": {
-      "panelLabel": "判定規則",
-      "hint": "點一件看看",
-      "accept": "收",
-      "stop": "攔",
-      "redirect": "導回",
-      "reasonAccept": "進熱裂解，變成再生原料。",
-      "reasonPVC": "含氯，進熱裂解會產生氯化氫，腐蝕設備。",
-      "reasonPET": "走寶特瓶回收。",
-      "reasonFoil": "含鋁箔的複合包材，不進熱裂解。",
-      "items": {
-        "bag": "塑膠袋",
-        "bento": "便當盒",
-        "foam": "保麗龍",
-        "pipe": "水管",
-        "bottle": "寶特瓶",
-        "carton": "鋁箔包"
-      }
-    },
-    "why": {
-      "tag": "為什麼是捷寶",
-      "title": "背靠一座運轉中的化學回收廠",
-      "patentsKind": "發明專利"
-    },
-    "flow": {
-      "up": {
-        "label": "上游",
-        "title": "企業廠區"
-      },
-      "asper": {
-        "label": "捷寶",
-        "title": "來源端判定"
-      },
-      "down": {
-        "label": "下游",
-        "title": "關係企業海神全球",
-        "note": "熱裂解廠 · ISCC PLUS 持證"
-      },
-      "out": {
-        "label": "產出",
-        "title": "再生原料"
-      }
-    },
     "vision": {
       "tag": "我們想做到的",
       "statCaption": "民國 110 年台灣收集的 1,909,496 噸廢塑膠中，進焚化的比例（研究估算，含非通用塑膠）。",

@@ -12,55 +12,6 @@
   },
   "home": {
     "tag": "Household plastic recognition × chemical recycling",
-    "niche": {
-      "tag": "Our niche",
-      "q1": "A sorting facility asks: which bin?",
-      "q2": "Asper asks: can this become feedstock again?",
-      "summary": "Apart from PVC, PET and aluminium-lined packaging, most plastics can be accepted."
-    },
-    "sorter": {
-      "panelLabel": "Judgment rule",
-      "hint": "Tap an item",
-      "accept": "Accept",
-      "stop": "Stop",
-      "redirect": "Redirect",
-      "reasonAccept": "Goes into pyrolysis and becomes recycled feedstock.",
-      "reasonPVC": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
-      "reasonPET": "Goes back to PET bottle recycling.",
-      "reasonFoil": "A carton lined with aluminium foil. It does not go into pyrolysis.",
-      "items": {
-        "bag": "Plastic bag",
-        "bento": "Lunch box",
-        "foam": "Foam tray",
-        "pipe": "Water pipe",
-        "bottle": "Drink bottle",
-        "carton": "Drink carton"
-      }
-    },
-    "why": {
-      "tag": "Why Asper",
-      "title": "Backed by a working chemical recycling plant",
-      "patentsKind": "Invention patents"
-    },
-    "flow": {
-      "up": {
-        "label": "Upstream",
-        "title": "Corporate site"
-      },
-      "asper": {
-        "label": "Asper",
-        "title": "Judgment at the source"
-      },
-      "down": {
-        "label": "Downstream",
-        "title": "Our affiliate's plant",
-        "note": "Pyrolysis plant · ISCC PLUS certified"
-      },
-      "out": {
-        "label": "Output",
-        "title": "Recycled feedstock"
-      }
-    },
     "vision": {
       "tag": "Where we are going",
       "statCaption": "Share of the 1,909,496 tonnes of plastic waste collected in Taiwan in 2021 that went to incineration (research estimate, includes non-commodity plastics).",
