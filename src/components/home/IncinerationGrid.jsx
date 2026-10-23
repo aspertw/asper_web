@@ -33,7 +33,7 @@ const IncinerationGrid = () => {
       <div className="burn-grid" aria-hidden="true">
         {Array.from({ length: DOTS }, (_, i) => {
           const inHalf = i < HALF;
-          const color = !inHalf || shown === 0 ? '#1f2937' : shown === 1 ? '#EA4335' : '#34A853';
+          const color = !inHalf || shown === 0 ? '#16251F' : shown === 1 ? 'var(--stop)' : 'var(--accent)';
           return (
             <span
               key={i}
@@ -45,13 +45,13 @@ const IncinerationGrid = () => {
       </div>
       <div className="burn-legend">
         <p className={`burn-line${shown >= 1 ? ' is-on' : ''}`}>
-          <span className="burn-swatch" style={{ background: '#EA4335' }} />{t('home.vision.line1')}
+          <span className="burn-swatch" style={{ background: 'var(--stop)' }} />{t('home.vision.line1')}
         </p>
         <p className={`burn-line${shown >= 2 || reduced ? ' is-on' : ''}`}>
-          <span className="burn-swatch" style={{ background: '#34A853' }} />{t('home.vision.line2')}
+          <span className="burn-swatch" style={{ background: 'var(--accent)' }} />{t('home.vision.line2')}
         </p>
         {!reduced && phase === 2 && (
-          <button type="button" className="burn-replay" onClick={replay}>
+          <button type="button" className="ghost-btn burn-replay" onClick={replay}>
             <RotateCcw size={14} /> {t('home.vision.replay')}
           </button>
         )}

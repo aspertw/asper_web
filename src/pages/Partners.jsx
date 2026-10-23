@@ -28,10 +28,10 @@ const Partners = () => {
             <div className="grid-3">
               {partners.map((p, i) => (
                 <div key={i} style={{
-                  padding: '32px 24px', background: '#111', border: '1px solid #1a1a1a',
+                  padding: '32px 24px', background: 'var(--bg-raised)', border: '1px solid var(--line)',
                   borderRadius: 12, textAlign: 'center', transition: 'border-color 0.2s',
                 }} onMouseOver={e => e.currentTarget.style.borderColor = '#333'}
-                  onMouseOut={e => e.currentTarget.style.borderColor = '#1a1a1a'}>
+                  onMouseOut={e => e.currentTarget.style.borderColor = 'var(--line)'}>
                   <div style={{
                     fontFamily: 'var(--font-mono)', fontSize: '1.2rem',
                     color: '#94A3B8', marginBottom: 8, fontWeight: 600,
@@ -39,7 +39,7 @@ const Partners = () => {
                   <div style={{ fontSize: '0.8rem', color: '#475569', marginBottom: 4 }}>{p.nameCn}</div>
                   <div style={{
                     display: 'inline-block', padding: '2px 10px', borderRadius: 100,
-                    background: 'rgba(66,133,244,0.1)', color: '#4285F4',
+                    background: 'rgba(91,228,155,0.1)', color: 'var(--accent)',
                     fontFamily: 'var(--font-mono)', fontSize: '0.65rem',
                   }}>{p.category}</div>
                 </div>
@@ -49,7 +49,7 @@ const Partners = () => {
 
           {/* Contact by email (no form backend yet) */}
           <div style={{
-            background: '#111', border: '1px solid #1a1a1a',
+            background: 'var(--bg-raised)', border: '1px solid var(--line)',
             borderRadius: 12, padding: '48px 40px', maxWidth: 640,
           }}>
             <h2 style={{ fontSize: '1.3rem', marginBottom: 16, color: '#fff' }}>
