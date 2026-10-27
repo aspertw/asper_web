@@ -1,4 +1,4 @@
-import { BagIcon, LunchBoxIcon, FoamTrayIcon, BottleIcon, PipeIcon, CartonIcon } from './Illustrations';
+import { BagIcon, LunchBoxIcon, FoamTrayIcon, BottleIcon, PipeIcon } from './Illustrations';
 
 // Judgment rules (not model output). Colours match the accept / stop / redirect tags.
 export const VERDICT_COLORS = {
@@ -13,5 +13,4 @@ export const SCAN_ITEMS = [
   { id: 'foam', Icon: FoamTrayIcon, material: 'PS', verdict: 'accept', reason: 'reasonAccept' },
   { id: 'bottle', Icon: BottleIcon, material: 'PET', verdict: 'redirect', reason: 'reasonPET' },
   { id: 'pipe', Icon: PipeIcon, material: 'PVC', verdict: 'stop', reason: 'reasonPVC' },
-  { id: 'carton', Icon: CartonIcon, material: null, verdict: 'stop', reason: 'reasonFoil' },
 ];

@@ -63,15 +63,6 @@ export const PipeIcon = (props) => (
   </Svg>
 );
 
-export const CartonIcon = (props) => (
-  <Svg {...props}>
-    <path style={line} d="M18 18h28v40H18z" />
-    <path style={line} d="M18 18l5-8h18l5 8" />
-    <path style={line} d="M39 10l4-8" />
-    <path style={line} d="M24 30h16M24 36h10" />
-  </Svg>
-);
-
 export const FactoryIcon = (props) => (
   <Svg {...props}>
     <path style={line} d="M6 56V32l12 8v-8l12 8v-8l12 8V18h10v38z" />

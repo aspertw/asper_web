@@ -16,7 +16,7 @@
       "tag": "Our niche",
       "q1": "A sorting facility asks: which bin?",
       "q2": "Asper asks: can it become feedstock again?",
-      "summary": "Apart from PVC, PET and aluminium-lined packaging, most plastics can be accepted."
+      "summary": "PE, PP, PS and similar go into pyrolysis. PVC is stopped. PET goes back to bottle recycling."
     },
     "scan": {
       "accept": "Accept",
@@ -25,15 +25,13 @@
       "reasonAccept": "Goes into pyrolysis and becomes recycled feedstock.",
       "reasonPVC": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
       "reasonPET": "Goes back to PET bottle recycling.",
-      "reasonFoil": "A carton lined with aluminium foil. It does not go into pyrolysis.",
       "hint": "Tap an item to see why.",
       "items": {
         "bag": "Plastic bag",
         "bento": "Lunch box",
         "foam": "Foam tray",
         "bottle": "Drink bottle",
-        "pipe": "Water pipe",
-        "carton": "Drink carton"
+        "pipe": "Water pipe"
       }
     },
     "why": {

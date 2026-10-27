@@ -16,7 +16,7 @@
       "tag": "我們的利基",
       "q1": "回收場問：分到哪一桶？",
       "q2": "捷寶問：能不能變回原料？",
-      "summary": "PVC、PET 和含鋁箔的包材之外，塑膠大多可以收。"
+      "summary": "收 PE、PP、PS 等；攔 PVC；PET 導回寶特瓶回收。"
     },
     "scan": {
       "accept": "收",
@@ -25,15 +25,13 @@
       "reasonAccept": "進熱裂解，變成再生原料。",
       "reasonPVC": "含氯，進熱裂解會產生氯化氫，腐蝕設備。",
       "reasonPET": "走寶特瓶回收。",
-      "reasonFoil": "含鋁箔的複合包材，不進熱裂解。",
       "hint": "點一件，看為什麼。",
       "items": {
         "bag": "塑膠袋",
         "bento": "便當盒",
         "foam": "保麗龍",
         "bottle": "寶特瓶",
-        "pipe": "水管",
-        "carton": "鋁箔包"
+        "pipe": "水管"
       }
     },
     "why": {
