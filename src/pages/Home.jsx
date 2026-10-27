@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import VideoHero from '../components/VideoHero';
+import Reveal from '../components/home/Reveal';
+import IncinerationGrid from '../components/home/IncinerationGrid';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -38,16 +40,32 @@ const Home = () => {
         </div>
       </VideoHero>
 
-      {/* Other work: running systems, and ESG data as a planned next step */}
-      <section className="section">
+      {/* Vision: the one sourced number, shown as a dot grid */}
+      <section className="section home-block">
         <div className="container">
-          <h2 className="section-title" style={{ marginBottom: 40 }}>{t('home.alsoTitle')}</h2>
+          <Reveal><div className="tag" style={{ marginBottom: 24 }}>{t('home.vision.tag')}</div></Reveal>
+          <div className="vision">
+            <Reveal>
+              <div className="metric-value" style={{ fontSize: 'clamp(3rem, 7vw, 5rem)', lineHeight: 1 }}>50.11%</div>
+              <p className="home-footnote" style={{ marginTop: 12 }}>{t('home.vision.statCaption')}</p>
+              <a className="home-source" href="https://tdr.lib.ntu.edu.tw/handle/123456789/88379"
+                target="_blank" rel="noopener noreferrer">{t('home.vision.source')}</a>
+            </Reveal>
+            <Reveal delay={150}><IncinerationGrid /></Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Other work: running systems, and ESG data as a planned next step */}
+      <section className="section home-block">
+        <div className="container">
+          <Reveal><h2 className="section-title" style={{ marginBottom: 40 }}>{t('home.alsoTitle')}</h2></Reveal>
           <div className="grid-2" style={{ marginBottom: 40 }}>
             {[
               { num: '/01', title: t('home.erpTitle'), desc: t('home.erpDesc') },
               { num: '/02', title: t('home.esgTitle'), desc: t('home.esgDesc'), status: t('home.esgStatus') },
-            ].map(item => (
-              <div key={item.num} className="card">
+            ].map((item, i) => (
+              <Reveal key={item.num} delay={i * 150} className="card">
                 <div style={{
                   display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 12,
                 }}>
@@ -63,7 +81,7 @@ const Home = () => {
                   )}
                 </div>
                 <p style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.8 }}>{item.desc}</p>
-              </div>
+              </Reveal>
             ))}
           </div>
           <Link to="/partners" className="btn-primary">

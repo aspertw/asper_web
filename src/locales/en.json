@@ -12,6 +12,14 @@
   },
   "home": {
     "tag": "Household plastic recognition × chemical recycling",
+    "vision": {
+      "tag": "Where we are going",
+      "statCaption": "Share of the 1,909,496 tonnes of plastic waste collected in Taiwan in 2021 that went to incineration (research estimate, includes non-commodity plastics).",
+      "source": "Source: 黃梓恩 (2023), master's thesis, National Taiwan University (in Chinese)",
+      "line1": "About half of the plastic waste Taiwan collects ends up in incinerators.",
+      "line2": "We want the household plastic in that half to have a chance to become recycled feedstock again.",
+      "replay": "Replay"
+    },
     "alsoTitle": "Beyond recognition",
     "erpTitle": "ERP and CRM",
     "erpDesc": "Asper builds and runs ERP and CRM systems for factories. At our affiliate's pyrolysis plant, employees use them every day: the ERP for attendance, scheduling, and payroll, and the CRM for customers and sample orders.",
