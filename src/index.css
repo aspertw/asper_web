@@ -35,12 +35,13 @@ body {
   overflow-x: hidden;
 }
 
-:lang(zh), :lang(ja), :lang(ko) {
+/* Set on body so headings and elements with their own line-height keep it */
+body:lang(zh), body:lang(ja), body:lang(ko) {
   line-height: 1.9;
   letter-spacing: 0.02em;
 }
 
-:lang(ko) {
+body:lang(ko) {
   word-break: keep-all;
 }
 

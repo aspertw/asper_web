@@ -18,14 +18,10 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: t('nav.home') },
-    { path: '/ai-vision', label: t('nav.aiVision') },
-    { path: '/nexus', label: t('nav.nexus') },
-    { path: '/supply-chain', label: t('nav.supply') },
-    { path: '/metal-recovery', label: t('nav.metal') },
     { path: '/partners', label: t('nav.partners') },
   ];
 
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
+  const currentLang = languages.find(l => l.code === i18n.resolvedLanguage) || languages[0];
 
   return (
     <nav style={{
@@ -78,8 +74,8 @@ const Navbar = () => {
                   <button key={lang.code} onClick={() => { i18n.changeLanguage(lang.code); setLangOpen(false); }}
                     style={{
                       display: 'block', width: '100%', padding: '10px 16px', border: 'none',
-                      background: i18n.language === lang.code ? 'rgba(66,133,244,0.1)' : 'transparent',
-                      color: i18n.language === lang.code ? '#4285F4' : '#94A3B8',
+                      background: i18n.resolvedLanguage === lang.code ? 'rgba(66,133,244,0.1)' : 'transparent',
+                      color: i18n.resolvedLanguage === lang.code ? '#4285F4' : '#94A3B8',
                       cursor: 'pointer', fontFamily: 'var(--font-mono)', fontSize: '0.8rem',
                       textAlign: 'left',
                     }}>{lang.label}</button>
