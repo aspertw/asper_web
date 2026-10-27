@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Leaf } from 'lucide-react';
+import { ArrowRight, Database, Leaf } from 'lucide-react';
 import Reveal from '../components/home/Reveal';
 import VideoHero from '../components/VideoHero';
 import ScanRow from '../components/home/ScanRow';
@@ -84,19 +84,26 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 04 Other work: ESG data as a planned next step (one card) */}
+      {/* 04 Other work: running systems, and ESG data as a planned next step */}
       <section className="home-block">
         <div className="container">
           <Reveal><div className="home-index">04 · {t('home.alsoTag')}</div></Reveal>
           <Reveal><h2 className="home-h2">{t('home.alsoTitle')}</h2></Reveal>
-          <Reveal className="also-card also-single">
-            <Leaf size={28} className="also-icon" />
-            <h3 className="also-title">
-              {t('home.esgTitle')}
-              <span className="also-status">{t('home.esgStatus')}</span>
-            </h3>
-            <p className="also-desc">{t('home.esgDesc')}</p>
-          </Reveal>
+          <div className="also">
+            {[
+              { Icon: Database, title: t('home.erpTitle'), desc: t('home.erpDesc') },
+              { Icon: Leaf, title: t('home.esgTitle'), desc: t('home.esgDesc'), status: t('home.esgStatus') },
+            ].map((item, i) => (
+              <Reveal key={item.title} delay={i * 150} className="also-card">
+                <item.Icon size={28} className="also-icon" />
+                <h3 className="also-title">
+                  {item.title}
+                  {item.status && <span className="also-status">{item.status}</span>}
+                </h3>
+                <p className="also-desc">{item.desc}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
