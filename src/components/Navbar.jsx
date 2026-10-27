@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
-      background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(20px)',
+      background: 'rgba(8,17,14,0.85)', backdropFilter: 'blur(20px)',
       borderBottom: '1px solid rgba(255,255,255,0.05)',
     }}>
       <div style={{
@@ -46,7 +46,7 @@ const Navbar = () => {
           {navLinks.map(link => (
             <Link key={link.path} to={link.path} style={{
               fontSize: '0.8rem', fontFamily: 'var(--font-mono)',
-              color: location.pathname === link.path ? '#4285F4' : '#94A3B8',
+              color: location.pathname === link.path ? 'var(--accent)' : '#94A3B8',
               textDecoration: 'none', letterSpacing: '0.05em', textTransform: 'uppercase',
               transition: 'color 0.2s', fontWeight: 500,
             }}>{link.label}</Link>
@@ -74,8 +74,8 @@ const Navbar = () => {
                   <button key={lang.code} onClick={() => { i18n.changeLanguage(lang.code); setLangOpen(false); }}
                     style={{
                       display: 'block', width: '100%', padding: '10px 16px', border: 'none',
-                      background: i18n.resolvedLanguage === lang.code ? 'rgba(66,133,244,0.1)' : 'transparent',
-                      color: i18n.resolvedLanguage === lang.code ? '#4285F4' : '#94A3B8',
+                      background: i18n.resolvedLanguage === lang.code ? 'rgba(91,228,155,0.1)' : 'transparent',
+                      color: i18n.resolvedLanguage === lang.code ? 'var(--accent)' : '#94A3B8',
                       cursor: 'pointer', fontFamily: 'var(--font-mono)', fontSize: '0.8rem',
                       textAlign: 'left',
                     }}>{lang.label}</button>
@@ -94,14 +94,14 @@ const Navbar = () => {
 
       {mobileOpen && (
         <div style={{
-          padding: '16px 24px', background: 'rgba(0,0,0,0.95)',
+          padding: '16px 24px', background: 'rgba(8,17,14,0.95)',
           borderTop: '1px solid rgba(255,255,255,0.05)',
         }} className="nav-mobile-menu">
           {navLinks.map(link => (
             <Link key={link.path} to={link.path} onClick={() => setMobileOpen(false)} style={{
               display: 'block', padding: '12px 0', fontSize: '0.9rem',
               fontFamily: 'var(--font-mono)', textDecoration: 'none',
-              color: location.pathname === link.path ? '#4285F4' : '#94A3B8',
+              color: location.pathname === link.path ? 'var(--accent)' : '#94A3B8',
               borderBottom: '1px solid rgba(255,255,255,0.05)',
             }}>{link.label}</Link>
           ))}

@@ -5,13 +5,52 @@
     "partners": "Partners"
   },
   "hero": {
-    "headline": "Material recognition for household plastic",
-    "headline2": "backed by chemical recycling",
+    "headline": "The first checkpoint",
+    "headline2": "for chemical recycling",
     "subtext": "Our AI judges whether a piece of plastic waste can go into pyrolysis, so mixed and dirty household plastic that mechanical recycling rejects becomes recycled feedstock instead of being incinerated.",
     "cta": "Contact us"
   },
   "home": {
     "tag": "Household plastic recognition × chemical recycling",
+    "niche": {
+      "tag": "Our niche",
+      "q1": "A sorting facility asks: which bin?",
+      "q2": "Asper asks: can it become feedstock again?",
+      "summary": "PE, PP, PS and similar go into pyrolysis. PVC is stopped. PET goes back to bottle recycling."
+    },
+    "scan": {
+      "accept": "Accept",
+      "stop": "Stop",
+      "redirect": "Redirect",
+      "reasonAccept": "Goes into pyrolysis and becomes recycled feedstock.",
+      "reasonPVC": "Contains chlorine. In pyrolysis it forms hydrogen chloride, which corrodes the equipment.",
+      "reasonPET": "Goes back to PET bottle recycling.",
+      "hint": "Tap an item to see why.",
+      "items": {
+        "bag": "Plastic bag",
+        "bento": "Lunch box",
+        "foam": "Foam tray",
+        "bottle": "Drink bottle",
+        "pipe": "Water pipe"
+      }
+    },
+    "why": {
+      "tag": "Why Asper",
+      "title": "Backed by a working chemical recycling plant",
+      "patents": "Invention patents I933135, I906713"
+    },
+    "pipe": {
+      "site": "Corporate site",
+      "asper": "Asper's judgment",
+      "plant": "Our affiliate's plant",
+      "plantSub": "Pyrolysis · ISCC PLUS",
+      "out": "Recycled feedstock",
+      "stopped": "Stopped"
+    },
+    "alsoTag": "Other work",
+    "cta": {
+      "title": "Want your site's household plastic to become feedstock again?"
+    },
     "vision": {
       "tag": "Where we are going",
       "statCaption": "Share of the 1,909,496 tonnes of plastic waste collected in Taiwan in 2021 that went to incineration (research estimate, includes non-commodity plastics).",
@@ -23,6 +62,9 @@
     "alsoTitle": "Beyond recognition",
     "erpTitle": "ERP and CRM",
     "erpDesc": "Asper builds and runs ERP and CRM systems for factories. At our affiliate's pyrolysis plant, employees use them every day: the ERP for attendance, scheduling, and payroll, and the CRM for customers and sample orders.",
+    "cfTitle": "Carbon fiber recycling",
+    "cfStatus": "Patented technology",
+    "cfDesc": "Invention patent I906713: carbon fiber composites are pyrolyzed in a salt bath. The resin breaks down, the fiber is recovered, and the bath is reused.",
     "esgTitle": "ESG data",
     "esgStatus": "Planned",
     "esgDesc": "Next, we will turn the photo and timestamp behind every judgment into the data companies need for waste-reduction and ESG reporting."
