@@ -62,6 +62,9 @@
     "alsoTitle": "Beyond recognition",
     "erpTitle": "ERP and CRM",
     "erpDesc": "Asper builds and runs ERP and CRM systems for factories. At our affiliate's pyrolysis plant, employees use them every day: the ERP for attendance, scheduling, and payroll, and the CRM for customers and sample orders.",
+    "cfTitle": "Carbon fiber recycling",
+    "cfStatus": "Patented technology",
+    "cfDesc": "Invention patent I906713: carbon fiber composites are pyrolyzed in a salt bath. The resin breaks down, the fiber is recovered, and the bath is reused.",
     "esgTitle": "ESG data",
     "esgStatus": "Planned",
     "esgDesc": "Next, we will turn the photo and timestamp behind every judgment into the data companies need for waste-reduction and ESG reporting."

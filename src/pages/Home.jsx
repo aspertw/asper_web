@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Database, Leaf } from 'lucide-react';
+import { ArrowRight, Database, Layers, Leaf } from 'lucide-react';
 import Reveal from '../components/home/Reveal';
 import VideoHero from '../components/VideoHero';
 import ScanRow from '../components/home/ScanRow';
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 04 Other work: running systems, and ESG data as a planned next step */}
+      {/* 04 Other work: running systems, the carbon fiber patent, and ESG data as a planned next step */}
       <section className="home-block">
         <div className="container">
           <Reveal><div className="home-index">04 · {t('home.alsoTag')}</div></Reveal>
@@ -92,6 +92,7 @@ const Home = () => {
           <div className="also">
             {[
               { Icon: Database, title: t('home.erpTitle'), desc: t('home.erpDesc') },
+              { Icon: Layers, title: t('home.cfTitle'), desc: t('home.cfDesc'), status: t('home.cfStatus') },
               { Icon: Leaf, title: t('home.esgTitle'), desc: t('home.esgDesc'), status: t('home.esgStatus') },
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 150} className="also-card">
