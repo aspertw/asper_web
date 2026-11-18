@@ -63,22 +63,6 @@ export const PipeIcon = (props) => (
   </Svg>
 );
 
-export const FactoryIcon = (props) => (
-  <Svg {...props}>
-    <path style={line} d="M6 56V32l12 8v-8l12 8v-8l12 8V18h10v38z" />
-    <path style={line} d="M24 56v-8h6v8M42 46h4M12 46h4" />
-  </Svg>
-);
-
-export const PhoneIcon = (props) => (
-  <Svg {...props}>
-    <rect style={line} x="18" y="4" width="28" height="56" rx="5" />
-    <path style={line} d="M28 9h8" />
-    <path style={line} d="M24 22v-4h4M40 22v-4h-4M24 38v4h4M40 38v4h-4" />
-    <path style={line} d="M23 30h18" />
-  </Svg>
-);
-
 export const ReactorIcon = (props) => (
   <Svg {...props}>
     <path style={line} d="M20 8h24v26a12 12 0 0 1-24 0z" />
@@ -88,19 +72,22 @@ export const ReactorIcon = (props) => (
   </Svg>
 );
 
-export const FeedstockIcon = (props) => (
+// ASPER Gate: a bin with the smart lid; the camera on the lid's front edge looks at the item
+export const LidIcon = (props) => (
   <Svg {...props}>
-    <path style={line} d="M32 6C24 18 18 26 18 34a14 14 0 0 0 28 0c0-8-6-16-14-28z" />
-    <circle style={line} cx="14" cy="54" r="4" />
-    <circle style={line} cx="26" cy="56" r="4" />
-    <circle style={line} cx="50" cy="54" r="4" />
+    <path style={line} d="M18 32l3 26h22l3-26" />
+    <rect style={line} x="12" y="24" width="40" height="8" rx="2" />
+    <circle style={line} cx="32" cy="28" r="1.5" />
+    <path style={line} d="M28 20l-6-10M36 20l6-10" strokeDasharray="2 3" />
   </Svg>
 );
 
-export const BinIcon = (props) => (
+// ASPER Sort: a camera over a conveyor belt with items on it
+export const SortIcon = (props) => (
   <Svg {...props}>
-    <path style={line} d="M14 20h36M26 20v-6h12v6" />
-    <path style={line} d="M18 20l3 36h22l3-36" />
-    <path style={line} d="M27 30l10 16M37 30L27 46" />
+    <rect style={line} x="26" y="6" width="12" height="8" rx="2" />
+    <path style={line} d="M29 14l-7 18M35 14l7 18" strokeDasharray="2 3" />
+    <rect style={line} x="6" y="42" width="52" height="10" rx="5" />
+    <path style={line} d="M14 42v-6h8v6M36 42a5 5 0 0 1 10 0" />
   </Svg>
 );

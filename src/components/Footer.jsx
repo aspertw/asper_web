@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { INCEPTION_URL } from '../links';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -24,6 +25,11 @@ const Footer = () => {
             <p style={{ color: '#64748B', fontSize: '0.875rem', lineHeight: 1.7 }}>
               {t('footer.companyDesc')}
             </p>
+            <a href={INCEPTION_URL} target="_blank" rel="noopener noreferrer"
+              style={{ display: 'inline-block', marginTop: 24 }}>
+              <img src="/badges/nvidia-inception-program-badge.svg" alt={t('footer.inception')}
+                width="139" height="60" style={{ display: 'block' }} />
+            </a>
           </div>
 
           <div>
@@ -68,7 +74,7 @@ const Footer = () => {
           alignItems: 'center', flexWrap: 'wrap', gap: 16,
         }}>
           <p style={{ color: '#475569', fontSize: '0.75rem', fontFamily: 'var(--font-mono)' }}>
-            &copy; {new Date().getFullYear()} Asper International. {t('footer.rights')}
+            &copy; {new Date().getFullYear()} Asper International Corp., Ltd. {t('footer.rights')}
           </p>
           <p style={{
             color: '#475569', fontSize: '0.75rem', fontFamily: 'var(--font-mono)',

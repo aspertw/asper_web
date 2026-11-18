@@ -356,6 +356,7 @@ a:hover {
   word-break: keep-all; overflow-wrap: anywhere;
 }
 .home-note { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-3); margin-top: 32px; }
+
 .home-stat {
   font-family: var(--font-mono); font-size: clamp(4rem, 10vw, 7.5rem); font-weight: 600;
   line-height: 1; color: var(--accent); letter-spacing: -0.03em;
@@ -397,22 +398,67 @@ a:hover {
 .scanrow-foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 32px; min-height: 40px; }
 .scanrow-reason { color: var(--text-2); font-size: 1rem; }
 
-/* 02 Pipeline */
+/* 02 Product roadmap */
 .pipe { width: 100%; height: auto; display: block; overflow: visible; }
 .pipe-vertical { display: none; max-width: 360px; margin: 0 auto; }
+/* Material path draws in once (paths use pathLength="1") */
 .pipe-seg {
-  fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: 200; stroke-dashoffset: 200;
+  fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: 1; stroke-dashoffset: 1;
   transition: stroke-dashoffset 1s ease, stroke 0.6s; transition-delay: calc(var(--i) * 450ms + 300ms);
 }
-.pipe.is-on .pipe-seg { stroke-dashoffset: 0; stroke: #2A4238; }
-.pipe-branch { fill: none; stroke: var(--stop); stroke-width: 1.5; stroke-dasharray: 4 5; opacity: 0.5; }
+.pipe.is-on .pipe-seg { stroke-dashoffset: 0; stroke: #3A5A4D; }
+.pipe-arrowhead { fill: none; stroke: #3A5A4D; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.pipe-path-label { fill: var(--text-2); font-size: 14px; font-family: var(--font-body); }
+.pipe-classes { fill: var(--accent); font-size: 13px; font-family: var(--font-mono); }
+/* Items turned away at the lid */
+.pipe-reject { fill: none; stroke: var(--stop); stroke-width: 1.5; opacity: 0.55; }
+.pipe-reject-label { fill: var(--stop); font-size: 14px; font-family: var(--font-body); opacity: 0.9; }
+.pipe-reject-types { fill: var(--text-3); font-size: 13px; font-family: var(--font-mono); }
 .pipe-node-bg { fill: var(--bg-raised); stroke: var(--line); stroke-width: 1.5; }
 .pipe-node { opacity: 0.3; transition: opacity 0.6s ease; transition-delay: calc(var(--i) * 450ms); }
 .pipe.is-on .pipe-node { opacity: 1; }
 .pipe-icon { color: var(--text); }
 .pipe-label { fill: var(--text); font-size: 18px; font-weight: 600; font-family: var(--font-body); }
 .pipe-sub { fill: var(--text-3); font-size: 13px; font-family: var(--font-mono); }
-.pipe-bin-label { fill: var(--stop); font-size: 14px; font-family: var(--font-mono); }
+.pipe-extra { fill: var(--text-3); font-size: 12px; font-family: var(--font-mono); opacity: 0.8; }
+/* Gate and Sort are the focus */
+.pipe-node.is-key .pipe-node-bg { stroke: rgba(91, 228, 155, 0.55); }
+.pipe-node.is-key .pipe-icon { color: var(--accent); }
+/* Data path: dashed, slowly moving back to train the sorting model */
+.pipe-data {
+  fill: none; stroke: var(--redirect); stroke-width: 1.5; stroke-dasharray: 6 8; opacity: 0.75;
+  animation: dataFlow 1.6s linear infinite;
+}
+@keyframes dataFlow { to { stroke-dashoffset: -28; } }
+.pipe-data-arrowhead { fill: none; stroke: var(--redirect); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.pipe-data-label { fill: var(--redirect); font-size: 13px; font-family: var(--font-body); opacity: 0.9; }
+.pipe-tap { fill: var(--redirect); opacity: 0.9; }
+.pipe-legend-solid { stroke: #3A5A4D; stroke-width: 2; }
+.pipe-legend-dashed { stroke: var(--redirect); stroke-width: 1.5; stroke-dasharray: 6 8; opacity: 0.75; }
+.pipe-legend-text { fill: var(--text-3); font-size: 12px; font-family: var(--font-body); }
+
+/* The two products under the roadmap */
+.products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; margin-top: 48px; }
+.product { min-width: 0; }
+.product-name { font-size: 1.5rem; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.product-kind { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500; color: var(--accent); letter-spacing: 0.05em; }
+.product-line { color: var(--text-2); line-height: 1.7; }
+@media (max-width: 768px) { .products { grid-template-columns: 1fr; } }
+
+/* 03 Why Asper: four proof cells; the NVIDIA cell is the badge alone */
+.proof { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.proof-cell {
+  padding: 32px; border: 1px solid var(--line); border-radius: 24px; background: var(--bg-raised);
+  display: flex; flex-direction: column; gap: 14px; min-width: 0;
+}
+.proof-label {
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent);
+  letter-spacing: 0.15em; text-transform: uppercase;
+}
+.proof-text { color: var(--text); font-size: 1.1rem; line-height: 1.7; line-break: strict; overflow-wrap: anywhere; }
+.proof-badge { justify-content: center; align-items: center; }
+.proof-badge img { display: block; width: 139px; height: 60px; }
+@media (max-width: 1024px) { .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* 03 Vision dot grid */
 .vision { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; }
@@ -429,8 +475,8 @@ a:hover {
 .burn-swatch { flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; transform: translateY(-1px); }
 .burn-replay { align-self: flex-start; }
 
-/* 04 Other work */
-.also { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+/* 05 Other work */
+.also { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 /* Tablet: two per row; an odd last card spans the row so no column is left empty */
 @media (max-width: 1024px) {
   .also { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -454,6 +500,16 @@ a:hover {
   font-size: clamp(1.8rem, 4vw, 3rem); max-width: 820px; margin: 0 auto 40px;
   word-break: keep-all; overflow-wrap: anywhere;
 }
+.invite {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;
+  max-width: 1000px; margin: 0 auto 48px; text-align: left;
+}
+.invite-card { padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: rgba(14, 27, 22, 0.7); min-width: 0; }
+.invite-who {
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent);
+  letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px;
+}
+.invite-what { color: var(--text-2); line-height: 1.7; line-break: strict; overflow-wrap: anywhere; }
 
 @media (max-width: 768px) {
   .home-block { padding: 112px 0; }
@@ -469,6 +525,9 @@ a:hover {
   .burn-grid { max-width: 280px; }
   .also { grid-template-columns: 1fr; }
   .also-card { padding: 28px; }
+  .proof { grid-template-columns: 1fr; }
+  .proof-cell { padding: 28px; }
+  .invite { grid-template-columns: 1fr; }
   .home-cta { padding: 120px 0; }
 }
 
@@ -478,5 +537,6 @@ a:hover {
   .scanrow-item.is-done .scanrow-icon, .scanrow-item.is-done .scanrow-stamp { animation: none; }
   .pipe-seg { stroke-dashoffset: 0; transition: none; }
   .pipe-node { opacity: 1; transition: none; }
+  .pipe-data { animation: none; }
   .burn-dot, .burn-line { transition: none; }
 }

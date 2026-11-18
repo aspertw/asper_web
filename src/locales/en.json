@@ -16,7 +16,11 @@
       "tag": "Our niche",
       "q1": "A sorting facility asks: which bin?",
       "q2": "Asper asks: can it become feedstock again?",
-      "summary": "PE, PP, PS and similar go into pyrolysis. PVC is stopped. PET goes back to bottle recycling."
+      "summary": "ASPER\u00a0Gate's rules: PE, PP, PS, and similar plastics go to pyrolysis; PVC is rejected; PET goes back to bottle recycling."
+    },
+    "roadmap": {
+      "tag": "Product roadmap",
+      "title": "ASPER\u00a0Gate screens at the bin. ASPER\u00a0Sort sorts on the line."
     },
     "scan": {
       "accept": "Accept",
@@ -36,20 +40,51 @@
     },
     "why": {
       "tag": "Why Asper",
-      "title": "Backed by a working chemical recycling plant",
-      "patents": "Invention patents I933135, I906713"
+      "title": "What we've done so far",
+      "siteLabel": "Site",
+      "site": "ASPER\u00a0Gate is in use at a semiconductor plant.",
+      "patentsLabel": "Patents",
+      "patents": "Two Taiwan invention patents: I933135 and I906713.",
+      "googleLabel": "Collaboration",
+      "google": "Working with Google's gTech team on a plastic-recognition algorithm for Taiwan.",
+      "inceptionAlt": "NVIDIA Inception Program"
     },
     "pipe": {
-      "site": "Corporate site",
-      "asper": "Asper's judgment",
-      "plant": "Our affiliate's plant",
-      "plantSub": "Pyrolysis · ISCC PLUS",
-      "out": "Recycled feedstock",
-      "stopped": "Stopped"
+      "input": "Discarded",
+      "gate": "ASPER\u00a0Gate",
+      "gateSub": "At the bin",
+      "accepted": "Accepted plastic",
+      "notPlastic": "Not plastic",
+      "rejected": "Plastics we don't take",
+      "rejectedTypes": "PET, PVC",
+      "sort": "ASPER\u00a0Sort",
+      "sortSub": "On the sorting line",
+      "classes": "19 classes",
+      "sorted": "Sorted feedstock",
+      "plant": "Pyrolysis plant",
+      "plantSub": "An associated company",
+      "plantSoftware": "Runs on our ERP & CRM",
+      "imagesData": "Screening images",
+      "sortData": "Sorting data",
+      "train": "Trains the sorting model",
+      "materialPath": "Material flow",
+      "dataPath": "Data flow"
+    },
+    "products": {
+      "gateKind": "Screening at the bin",
+      "gateLine": "A smart lid we designed: fast decisions, low cost.",
+      "sortKind": "Image recognition on the line",
+      "sortLine": "Developed with Google's gTech team."
     },
     "alsoTag": "Other work",
     "cta": {
-      "title": "Want your site's household plastic to become feedstock again?"
+      "title": "We're looking for partners",
+      "sites": "Sites",
+      "sitesAsk": "Host an ASPER\u00a0Gate trial at your site.",
+      "recyclers": "Recyclers",
+      "recyclersAsk": "Share your feedstock specs, and we'll build your accept and reject rules into our AI.",
+      "hardware": "Hardware makers",
+      "hardwareAsk": "Build Asper's AI decision-making into your recycling equipment."
     },
     "vision": {
       "tag": "Where we are going",
@@ -57,11 +92,10 @@
       "source": "Source: 黃梓恩 (2023), master's thesis, National Taiwan University (in Chinese)",
       "line1": "About half of the plastic waste Taiwan collects ends up in incinerators.",
       "line2": "We want the household plastic in that half to have a chance to become recycled feedstock again.",
-      "replay": "Replay"
+      "replay": "Replay",
+      "title": "Sort it right, and chemical recycling can take it."
     },
     "alsoTitle": "Beyond recognition",
-    "erpTitle": "ERP and CRM",
-    "erpDesc": "Asper builds and runs ERP and CRM systems for factories. At our affiliate's pyrolysis plant, employees use them every day: the ERP for attendance, scheduling, and payroll, and the CRM for customers and sample orders.",
     "cfTitle": "Carbon fiber recycling",
     "cfStatus": "Patented technology",
     "cfDesc": "Invention patent I906713: carbon fiber composites are pyrolyzed in a salt bath. The resin breaks down, the fiber is recovered, and the bath is reused.",
@@ -88,7 +122,7 @@
     "title": "Partners & Research",
     "subtitle": "Building the circular economy together. We are looking for investment partners, site partners, and recycling partners.",
     "tag": "Ecosystem",
-    "logoWall": "Strategic Partners",
+    "logoWall": "Partner sites",
     "formTitle": "Become a Partner",
     "contactDesc": "Email us with a short note about your organization and how you would like to work together.",
     "mailSubject": "Partnership inquiry"
@@ -100,6 +134,7 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "All rights reserved.",
-    "address": "8F, No. 415, Sec. 4, Xinyi Rd., Taipei, Taiwan"
+    "address": "8F, No. 415, Sec. 4, Xinyi Rd., Taipei, Taiwan",
+    "inception": "Member of the NVIDIA Inception program"
   }
 }
