@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { INCEPTION_URL } from '../links';
+import { INCEPTION_URL, X_URL, X_HANDLE } from '../links';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -25,6 +25,13 @@ const Footer = () => {
             <p style={{ color: '#64748B', fontSize: '0.875rem', lineHeight: 1.7 }}>
               {t('footer.companyDesc')}
             </p>
+            <a href={X_URL} target="_blank" rel="noopener noreferrer" className="footer-social"
+              aria-label={t('footer.x')}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>{X_HANDLE}</span>
+            </a>
             <a href={INCEPTION_URL} target="_blank" rel="noopener noreferrer"
               style={{ display: 'inline-block', marginTop: 24 }}>
               <img src="/badges/nvidia-inception-program-badge.svg" alt={t('footer.inception')}
