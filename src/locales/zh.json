@@ -16,7 +16,11 @@
       "tag": "我們的利基",
       "q1": "回收場問：分到哪一桶？",
       "q2": "捷寶問：能不能變回原料？",
-      "summary": "收 PE、PP、PS 等；攔 PVC；PET 導回寶特瓶回收。"
+      "summary": "ASPER\u00a0Gate 的規則：收 PE、PP、PS 等；攔 PVC；PET 導回寶特瓶回收。"
+    },
+    "roadmap": {
+      "tag": "產品路線",
+      "title": "ASPER\u00a0Gate\u00a0先把關，\u200bASPER\u00a0Sort\u00a0再分好"
     },
     "scan": {
       "accept": "收",
@@ -36,20 +40,51 @@
     },
     "why": {
       "tag": "為什麼是捷寶",
-      "title": "背靠一座運轉中的\u200b化學回收廠",
-      "patents": "發明專利 I933135、I906713"
+      "title": "我們已經做到的事",
+      "siteLabel": "場域",
+      "site": "ASPER\u00a0Gate 已在半導體廠區落地。",
+      "patentsLabel": "專利",
+      "patents": "兩項台灣發明專利：I933135、I906713。",
+      "googleLabel": "合作",
+      "google": "和 Google\u00a0gTech 團隊合作，開發台灣的塑膠辨識演算法。",
+      "inceptionAlt": "NVIDIA Inception Program"
     },
     "pipe": {
-      "site": "企業廠區",
-      "asper": "捷寶判定",
+      "input": "丟棄物",
+      "gate": "ASPER\u00a0Gate",
+      "gateSub": "來料端",
+      "accepted": "塑膠・收",
+      "notPlastic": "不是塑膠",
+      "rejected": "不收的塑膠",
+      "rejectedTypes": "PET、PVC",
+      "sort": "ASPER\u00a0Sort",
+      "sortSub": "分選線",
+      "classes": "19 類",
+      "sorted": "選好的料",
       "plant": "關係企業海神全球",
-      "plantSub": "熱裂解廠 · ISCC PLUS",
-      "out": "再生原料",
-      "stopped": "攔下"
+      "plantSub": "廢塑膠化學性回收",
+      "plantSoftware": "營運軟體 ERP・CRM",
+      "imagesData": "判定影像",
+      "sortData": "分選數據",
+      "train": "訓練分選模型",
+      "materialPath": "料的路",
+      "dataPath": "數據的路"
+    },
+    "products": {
+      "gateKind": "前端辨識",
+      "gateLine": "自己設計的智慧上蓋，判定快、成本低。",
+      "sortKind": "分選線影像辨識",
+      "sortLine": "和 Google\u00a0gTech 團隊合作開發。"
     },
     "alsoTag": "其他服務",
     "cta": {
-      "title": "想讓廠區的\u200b生活廢塑膠\u200b變回原料？"
+      "title": "我們在找一起做的夥伴",
+      "sites": "場域",
+      "sitesAsk": "提供一個點位，試放 ASPER\u00a0Gate。",
+      "recyclers": "回收業者",
+      "recyclersAsk": "告訴我們你的進料規格，我們把收、攔規則放進 AI。",
+      "hardware": "硬體夥伴",
+      "hardwareAsk": "把 ASPER 的 AI 判定，裝進你的回收設備。"
     },
     "vision": {
       "tag": "我們想做到的",
@@ -57,11 +92,10 @@
       "source": "來源：黃梓恩（2023），〈台灣通用塑膠物質流分析〉，臺灣大學碩士論文",
       "line1": "台灣收集的廢塑膠，約有一半進了焚化爐。",
       "line2": "我們要讓其中的生活廢塑膠，有機會變回再生原料。",
-      "replay": "再看一次"
+      "replay": "再看一次",
+      "title": "如果分得好，\u200b廢塑膠化學性回收就吃得下。"
     },
     "alsoTitle": "辨識之外，我們也做",
-    "erpTitle": "ERP 與 CRM",
-    "erpDesc": "捷寶開發並維運工廠用的 ERP 與 CRM。在關係企業海神全球的熱裂解廠，員工每天用 ERP 處理出勤、排班與薪資，用 CRM 管理客戶與樣品單。",
     "cfTitle": "碳纖維回收",
     "cfStatus": "專利技術",
     "cfDesc": "捷寶的發明專利 I906713：把碳纖維複合材料放進鹽浴熱裂解，分解樹脂、取回纖維，鹽浴可以重複使用。",
@@ -88,7 +122,7 @@
     "tag": "生態系統",
     "title": "合作夥伴與研究",
     "subtitle": "攜手共建循環經濟。我們在找投資夥伴、場域夥伴與回收夥伴。",
-    "logoWall": "策略合作夥伴",
+    "logoWall": "合作場域",
     "formTitle": "成為合作夥伴",
     "contactDesc": "請直接寄信給我們，介紹你的組織與想合作的方向。",
     "mailSubject": "合作洽詢"
@@ -100,6 +134,7 @@
     "quickLinks": "快速連結",
     "contact": "聯繫我們",
     "rights": "版權所有。",
-    "address": "台北市信義路四段 415 號 8 樓"
+    "address": "台北市信義路四段 415 號 8 樓",
+    "inception": "NVIDIA Inception 計畫成員"
   }
 }
