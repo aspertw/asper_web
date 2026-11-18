@@ -540,3 +540,11 @@ a:hover {
   .pipe-data { animation: none; }
   .burn-dot, .burn-line { transition: none; }
 }
+
+/* Footer: the company's X account */
+.footer-social {
+  display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 20px;
+  color: #64748B; font-family: var(--font-mono); font-size: 0.85rem; text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-social:hover { color: var(--text); opacity: 1; }
