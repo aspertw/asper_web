@@ -363,6 +363,8 @@ a:hover {
 }
 .home-footnote { font-size: 0.85rem; color: var(--text-3); line-height: 1.7; margin-top: 8px; max-width: 460px; }
 .home-source { display: inline-block; font-size: 0.8rem; color: var(--text-3); margin-top: 4px; }
+/* Paul's line under the source (Jasper 2026-11-19) */
+.home-credit { color: var(--text-2); font-size: 0.95rem; line-height: 1.7; margin-top: 20px; max-width: 460px; }
 .ghost-btn {
   display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 100px;
   border: 1px solid var(--line); background: transparent; color: var(--text-2); font-size: 0.85rem; cursor: pointer;

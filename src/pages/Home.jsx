@@ -55,6 +55,7 @@ const Home = () => {
               <p className="home-footnote" style={{ marginTop: 16 }}>{t('home.vision.statCaption')}</p>
               <a className="home-source" href="https://tdr.lib.ntu.edu.tw/handle/123456789/88379"
                 target="_blank" rel="noopener noreferrer">{t('home.vision.source')}</a>
+              <p className="home-credit">{t('home.vision.credit')}</p>
             </Reveal>
             <Reveal delay={150}><IncinerationGrid /></Reveal>
           </div>
